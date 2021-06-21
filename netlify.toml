@@ -1,4 +1,0 @@
-[[redirects]]
-    from  = "/"
-    to = "v/admin/admin.html"
-    status = 200
