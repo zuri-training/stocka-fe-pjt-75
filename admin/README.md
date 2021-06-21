@@ -1,1 +1,1 @@
-# stocka-fe-pjt-75
+# stocka-fe-pjt-75 - Admin-dashboard
