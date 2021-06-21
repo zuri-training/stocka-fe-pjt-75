@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel='stylesheet' href="css/notifications.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+   
+    <nav class="main-navbar">
+      <div class="nav-logo">
+        <img src="../images/Logo.png" class="logo-img" />
+      </div>
+      <div class="main-nav">
+        <div id='notifications-btn 'class="profile-md nav-btn">
+          <i class="fas fa-bell bell"></i>
+          <span class="badge">2</span>
+        </div>
+        <div class="nav-img">
+          <img src="../images/Ellipse 6.png" class="nav-avatar" />
+        </div>
+      </div>
+    </nav>
+    <div class="notifications-wrapper">
+      <div class="side-pane">
+        <li>
+          <a href="#Dashboard"><i class="fas fa-chess-board"></i> Dashboard</a>
+        </li>
+        <li>
+          <a href="#Profile"><i class="far fa-user-circle"></i> Profile</a>
+        </li>
+        <li>
+          <a href="#Stores"><i class="fas fa-store"></i> Stores</a>
+        </li>
+        <li>
+          <a href="#Products"><i class="fas fa-columns"></i>  Products</a>
+        </li>
+        <li>
+          <a href="#Report"><i class="fas fa-chart-line"></i> Report</a>
+        </li>
+        <li>
+          <a href="#Settings"><i class="fas fa-cog"></i> Settings</a>
+        </li>
+        <li>
+          <a href="#Sign out">
+            <i class="fas fa-sign-out-alt"></i> Sign out</a>
+        </li>
+      </div>
+      <div class="main">
+        <div class="top-nav">
+          <div>
+            <h3>Dashboard</h3>
+          </div>
+          <div class="cvs">
+            <div class="import-cvs">
+              <button class="import">Import CVS</button>
+            </div>
+            <div class="import-cvs">
+              <button class="export">Export</button>
+            </div>
+
+            <div class="currency">Currency-(₦)Naira</div>
+          </div>
+        </div>
+        <div class="bottom-md">
+          <div class="chart">
+            <div class="chart-js">
+              <div class="currency-rate">
+                <div class="rate">
+                  <p>Sugar/Naira</p>
+                  <button></button>
+                </div>
+                <div class="flow-value"></div>
+                <div class="filter-btns">
+                  <button class="day-btn">Day</button>
+                  <button class="week-btn">Week</button>
+                  <button class="month-btn">Month</button>
+                </div>
+              </div>
+              <div class="chart-js">
+                <canvas id="mychart"> </canvas>
+              </div>
+            </div>
+            <div class="sales">
+              <div class="sale-product">
+                <div class="icon"></div>
+                <div class="products">
+                  <p>All products</p>
+                  <p>2000</p>
+                </div>
+              </div>
+              <div class="sale-product">
+                <div class="icon">
+                  <i class="far fa-chart-bar bar-icon"></i>
+                </div>
+                <div class="products">
+                  <p>Sold</p>
+                  <p>120</p>
+                </div>
+              </div>
+              <div class="sale-product">
+                <div class="icon">
+                  <i class="fas fa-exclamation-triangle danger-icon"></i>
+                </div>
+                <div class="products">
+                  <p>Low in Stock</p>
+                  <p>120</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="sales-history">
+              <table id="sales-tabulated">
+                <tr>
+                  <td class="sales-title">Sales history</td>
+                </tr>
+                <tr>
+                  <th>Product</th>
+                  <th>Unit</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                  <th>Date</th>
+                  <th>Status</th>
+                </tr>
+                <tr>
+                  <td>Sugar</td>
+                  <td>kg</td>
+                  <td>1000</td>
+                  <td>20</td>
+                  <td>20/06/2021</td>
+                  <td>In stock</td>
+                </tr>
+                <tr>
+                  <td>Cassava</td>
+                  <td>kg</td>
+                  <td>600</td>
+                  <td>300</td>
+                  <td>19/05/21</td>
+                  <td>Low in stock</td>
+                </tr>
+                <tr>
+                  <td>Yam</td>
+                  <td>kg</td>
+                  <td>700</td>
+                  <td>15</td>
+                  <td>19/05/2021</td>
+                  <td>in stock</td>
+                </tr>
+                <tr>
+                  <td>Teleision</td>
+                  <td>kg</td>
+                  <td>50,000</td>
+                  <td>400</td>
+                  <td>19/05/2021</td>
+                  <td>out of stock</td>
+                </tr>
+                <tr>
+                  <td>Rubber</td>
+                  <td>kg</td>
+                  <td>15,000</td>
+                  <td>4,000</td>
+                  <td>19/05/2021</td>
+                  <td>in stock</td>
+                </tr>
+                <tr class="pagination">
+                  <td>
+                    <a>See all</a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <div class="total">
+            <div class="total-value">
+              <p class="store-value">
+                Total store value <span>₦ 5,000,000.00</span>
+              </p>
+              <div>
+                <button class="day-btn">Day</button>
+                <button class="week-btn">Week</button>
+                <button class="month-btn">Month</button>
+                <div class="value">
+                  <p class="profit-value">Profit <span>₦ 5,000,000</span></p>
+                  <div>
+                    <i class="fas fa-caret-up"></i>
+                    <span class="profit-value">+70%</span>
+                  </div>
+                </div>
+                <div class="value">
+                  <p class="loss-value">Loss <span>₦ 3,000,000</span></p>
+                  <div>
+                    <i class="fas fa-caret-down"></i>
+                    <span class="loss-value">-40%</span>
+                  </div>
+                </div>
+                <div class="value">
+                  <p class="net-value">Net <span>240,000</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="perfomance">
+              <p>This week's worst and performing goods</p>
+              <div class="products-perf">
+                <div class="maximum">
+                  <p><small>Best perfomance</small></p>
+                  <div class="product1">Product 1</div>
+                </div>
+                <div class="minimum">
+                  <p><small>Worst perfomance</small></p>
+                  <div class="product2">Product 2</div>
+                </div>
+              </div>
+              <div class="perf-icons">
+                <div>
+                  <i class="fas fa-caret-up"></i>
+
+                  <span class="profit-value"> +70% </span>
+                </div>
+                <div>
+                  <i class="fas fa-caret-down"></i>
+                  <span class="loss-value">-40%</span>
+                </div>
+                <div>see all</div>
+              </div>
+              <div class="perf-total">
+                <div>2,000.00</div>
+                <div>1050.00</div>
+                <div>products</div>
+              </div>
+            </div>
+            <div class="tips">
+              <h2>Tips!  <i class="fas fa-lightbulb"></i>   </h2>
+              <h5>7-proven budget friendly ideas to improve Your business.</h5>
+              <p>
+                Measure your marketing<br />
+                You don't need to measure all your marketing effort
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum
+                officia nulla ut omnis est modi corporis saepe minus praesentium
+                id?Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit velit in illo pariatur, laudantium amet expedita ab cupiditate! Adipisci, dignissimos?
+                
+              </p>
+              <button class="tips-read-more">Read More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Notfications Wrapper -->
+    <div class="modal-wrapper">
+      <div class="modal-pop-up">
+        <div class="section-one">
+          <p>NOTIFICATIONS</p>
+          <div class='close-notifications'>
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+        <div class="prize-alert">
+          <h4>Price Alert</h4>
+          
+          <small>The price of sugar has increased by 64% in the last 24hours</small>
+        <div class="open-chart">
+          <small>+362, 214</small>
+          <button>
+            <a href="#chart">Open Chart</a>
+          </button>
+        </div>
+        <small>3 hours ago</small>
+         </div>
+         <div class="stock-alert">
+           <h4>Stock Alert</h4>
+           
+           <small>
+        Your yam stock is low. You are adised to restock
+           </small>
+         <div class="see-products">
+           <small>0.824kg left in stock</small>
+           <button>
+             <a href="#chart">See products</a>
+           </button>
+         </div>
+         <small>2 hours ago</small>
+          </div>
+       </div>
+    </div>
+
+    <!-- Profile  -->
+      <div class="modal-wrapper-profile">
+        <div class="modal-pop-up">
+           <div class="profile">
+               <p>Profile</p>
+        
+                <div class='close-notifications' id="close">
+                    <i class="fas fa-times"></i>
+                  </div>
+               
+        </div> 
+        <div class="profile-img">
+            <img src="../images/Ellipse 6.png" class="profile-avatar"/>
+            <h4 class="profile-name">Tyler Perry</h4>
+        </div>
+        <div class="btn-edit">
+            <button class="edit-btn">Edit profile</button>
+        </div>
+       
+    
+    <li class="sign-out">
+      <a>
+        <i class="fas fa-sign-out-alt"></i> Sign out
+      </a>
+    </li>
+    </div>
+    </div>
+
+
+
+    
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.2/chart.min.js"></script>
+    <script src="script/chart.js"></script>
+    <script src= "script/modal-profile.js"></script>
+    <!-- <script src="script/modal.js"></script> -->
+
+  </body>
+</html>
