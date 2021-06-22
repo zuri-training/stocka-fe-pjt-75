@@ -1,0 +1,205 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background: #fffff0;
+  transition: 0.5s;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.container {
+  position: relative;
+  width: 70%;
+  height: 70vh;
+  margin: 20px;
+  left: 4%;
+  box-sizing: border-box;
+}
+
+.bigBg {
+  position: absolute;
+  right: 70%;
+  width: 45%;
+  height: 131%;
+  background: #08378c;
+}
+
+.smallBg {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  width: 100%;
+  /* height: 530px; */
+  height: 110%;
+  background: #08378c;
+  box-shadow: 0 5px 45px rgba(0, 0, 0, 0.3);
+}
+
+.smallBg .box {
+  padding: 0 0 10px 0;
+  position: relative;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* .smallBg .box .image .whiteBg {
+  width: 117%;
+  height: 12%;
+  position: relative;
+  background-color: #fff;
+} */
+
+.smallBg .box .image .firstImg {
+  position: relative;
+  max-height: 100%;
+  max-width: 117%;
+}
+
+.smallBg .box .image .logo {
+  position: absolute;
+  top: 0;
+  transform: translateY(-45px);
+  padding: 10px;
+  width: 60%;
+  height: 30%;
+  z-index: 1;
+}
+
+.formBx {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  width: 65%;
+  height: 110%;
+  background: #fff;
+}
+
+.container .formBx > a {
+  text-decoration: none;
+  font-size: 0.82rem;
+  position: relative;
+  left: 75%;
+  top: 5%;
+}
+
+.container .formBx > a:visited {
+  color: #08378c;
+}
+
+.formBx .form {
+  transform: translateY(40%);
+  transition: 0.6s ease-in-out;
+}
+
+.formBx .form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formBx .form form input {
+  width: 110%;
+  margin-bottom: 5%;
+  padding: 10px;
+  outline: none;
+  font-family: inherit;
+  font-size: 1rem;
+  border: 1px solid #afafaf;
+  border-radius: 4px;
+  position: relative;
+}
+
+.formBx .form form .input input:focus {
+  border-color: #08378c;
+}
+
+.formBx .form form .emailBox input {
+  width: 121%;
+  height: 60%;
+  position: relative;
+  right: 5%;
+}
+
+.formBx .form form input::placeholder {
+  font-size: 0.9rem;
+}
+
+/* .formBx .form form .input label {
+  margin-bottom: 10%;
+} */
+
+.formBx .form form .passwdBox label {
+  margin-left: 4%;
+}
+
+.formBx .form form .passwdBox #toggle {
+  position: absolute;
+  top: 41%;
+  right: 25.5%;
+  width: 16px;
+  height: 16px;
+  background: url(../images/eye.svg);
+  background-size: cover;
+  cursor: pointer;
+}
+
+.formBx .form form .passwdBox #toggle.hide {
+  background: url(../images/eye-slash.svg);
+  background-size: cover;
+}
+
+.formBx .form form button {
+  max-width: 110px;
+  cursor: pointer;
+  padding: 10px 25px;
+  color: #fff;
+  background: #08378c;
+  font-size: 0.7rem;
+  /* font-weight: 400; */
+  border: none;
+  border-radius: 17px;
+  margin-bottom: 2%;
+  vertical-align: middle;
+}
+
+.formBx .form form button:hover,
+.formBx .form form button:focus {
+  background: #2550a7;
+  outline: none;
+}
+
+.formBx .form form a,
+.formBx .form form p {
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-top: 6%;
+}
+
+.formBx .form form p {
+  font-size: 0.7rem;
+}
+
+.formBx .form form a:visited {
+  color: #08378c;
+}
+
+.formBx .form form .pageBtm {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+  left: 1%;
+}
