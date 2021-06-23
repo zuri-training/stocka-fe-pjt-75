@@ -1,0 +1,179 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background: #fffff0;
+  transition: 0.5s;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.container {
+  position: relative;
+  width: 70%;
+  height: 70vh;
+  margin: 20px;
+  left: 4%;
+  box-sizing: border-box;
+}
+
+.bigBg {
+  position: absolute;
+  right: 70%;
+  width: 45%;
+  height: 131%;
+  background: #08378c;
+}
+
+.smallBg {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  width: 100%;
+  height: 110%;
+  background: #08378c;
+  box-shadow: 0 5px 45px rgba(0, 0, 0, 0.3);
+}
+
+.smallBg .box {
+  padding: 0 0 10px 0;
+  position: relative;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.smallBg .box .image .whiteBg {
+  width: 117%;
+  height: 11%;
+  position: relative;
+  background-color: #fff;
+}
+
+.smallBg .box .image .logo {
+  position: absolute;
+  top: 15%;
+  right: 28%;
+  width: 100%;
+  height: 83%;
+  z-index: 1;
+}
+
+.smallBg .box .image .firstImg {
+  position: relative;
+  top: 20%;
+  left: 8%;
+  max-height: 90%;
+  max-width: 110%;
+}
+
+.formBx {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  width: 65%;
+  height: 110%;
+  background: #fff;
+}
+
+.container .formBx a,
+.container .formBx a:visited {
+  color: #093e9c;
+  text-decoration: none;
+}
+
+.container .formBx .help a {
+  position: fixed;
+  left: 75%;
+  top: 15%;
+  font-size: 0.82rem;
+}
+
+.formBx .form {
+  transform: translateY(40%);
+  transition: 0.3s;
+}
+
+.formBx .form .pageHead {
+  text-align: center;
+  margin-bottom: 8%;
+}
+
+.formBx .form .pageHead h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.formBx .form .pageHead p {
+  font-size: 0.9rem;
+}
+
+.formBx .form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formBx .form form input {
+  width: 140%;
+  margin-top: 2px;
+  margin-bottom: 5%;
+  padding: 10px;
+  outline: none;
+  font-family: inherit;
+  font-size: 1rem;
+  border: 1px solid #afafaf;
+  border-radius: 4px;
+  position: relative;
+  right: 20%;
+}
+
+.formBx .form form .input label {
+  position: relative;
+  right: 17%;
+}
+
+.formBx .form form input::placeholder {
+  font-size: 0.9rem;
+}
+
+.formBx .form form .input input:focus {
+  border-color: #093e9c;
+}
+
+.formBx .form form button {
+  max-width: 300px;
+  cursor: pointer;
+  padding: 13px 30px;
+  color: #fff;
+  background: #093e9c;
+  font-size: 0.7rem;
+  border: none;
+  border-radius: 19px;
+  margin: 4%;
+}
+
+.formBx .form form button:hover,
+.formBx .form form button:focus {
+  background: #2550a7;
+  outline: none;
+}
+
+.formBx .form form p,
+.formBx .form form a {
+  font-size: 0.9rem;
+}
+
+.formBx .form form p {
+  margin-bottom: 2%;
+}
