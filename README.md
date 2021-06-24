@@ -1,6 +1,7 @@
 # stocka-fe-pjt-75
 
 ABOUT STOCKA
+
 Stocka is a Digital inventory management platform
 
 
