@@ -41,7 +41,7 @@ https://docs.google.com/document/d/1-2hXzQ2AXQ554j54k_n6j9iI-xaqNb9vQFQrgad2iRs
 
 THE AMAZING FRONT-END TEAM
 
-1. Crown Ezeh - @peaches007
+1. Crown Favour Ezeh - @peaches007
 2. Ndi Lionel - @Spyke Lionel
 3. Mary Maina - @MaryMaina
 4. Omolade Mercy Akingbade - @ladeé
