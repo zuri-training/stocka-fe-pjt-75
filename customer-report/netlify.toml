@@ -1,4 +1,4 @@
 [[redirects]]
     from  = "/*"
-    to = "/customer-page.html"
+    to = "/report.html"
     status = 200
