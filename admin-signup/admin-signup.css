@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: url(./images/BACKGROUND.png) no-repeat center fixed;
+  background-size: cover;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.container .logo {
+  position: relative;
+  width: 12%;
+  margin: 2% 3%;
+}
+
+.formBx .form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  max-width: 480px;
+  height: 475px;
+  margin: 1% auto;
+  border-radius: 20px;
+  transition: 0.8s ease-in-out;
+  position: relative;
+}
+
+.formBx .form form input {
+  width: 110%;
+  margin: 1% auto 8%;
+  padding: 10px;
+  outline: none;
+  font-family: inherit;
+  font-size: 1rem;
+  border: 1px solid #afafaf;
+  border-radius: 4px;
+  position: relative;
+  right: 7.5%;
+}
+
+.formBx .form form .input input:focus {
+  border-color: #093e9c;
+}
+
+.formBx .form form input::placeholder {
+  font-size: 0.9rem;
+}
+
+.formBx .form form .passwdBox #toggle {
+  position: absolute;
+  top: 54.8%;
+  left: 78%;
+  width: 14px;
+  height: 14px;
+  background: url(../images/eye.svg);
+  background-size: cover;
+  cursor: pointer;
+}
+
+.formBx .form form .passwdBox #toggle.hide {
+  background: url(../images/eye-slash.svg);
+  background-size: cover;
+}
+
+.formBx .form form button {
+  width: 165px;
+  cursor: pointer;
+  padding: 15px 30px;
+  color: #fff;
+  background: #093e9c;
+  font-size: 0.7rem;
+  border: none;
+  border-radius: 20px;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  vertical-align: middle;
+}
+
+.formBx .form form button:hover,
+.formBx .form form button:focus {
+  background: #2550a7;
+  outline: none;
+}
+
+.formBx .form form a,
+.formBx .form form p {
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-top: 6%;
+}
+
+.formBx .form form p {
+  font-size: 0.7rem;
+}
+
+.formBx .form form a:visited {
+  color: #093e9c;
+}
+
+.formBx .form form .pageBtm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
