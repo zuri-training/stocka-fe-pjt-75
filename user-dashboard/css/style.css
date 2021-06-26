@@ -9,6 +9,22 @@
     --error: #D11464;
     --black: #000000;
 }
+/* Navbar  */
+.harmburger-menu{
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.bottom-md{
+    background-color: rgba(255,255,255,0.5);
+}
+.side-pane.active{
+    width: 50%;
+    left: 0;
+    transition: all .3s;
+    z-index: 3;
+}
+
 .main-wrapper{
     display: grid;
     grid-template-columns: 300px auto;
@@ -45,6 +61,8 @@
 /* .top-nav{
     margin-top: 10px;
 }  */
+
+/* top navbar */
 .top-nav,
 .cvs{
     display: flex;
@@ -52,6 +70,7 @@
     align-items: center;
     height: 40px;
     padding: 0 10px;
+    
     /* background-color: #D11464; */
 }
 .import-cvs{
@@ -61,6 +80,7 @@
 .import{
 padding: 5px 35px;
 outline: none;
+
 border: 1px solid var(--blue);
 color: var(--blue);
 border-radius: 50px;
@@ -68,12 +88,16 @@ border-radius: 50px;
 .export{
 padding: 5px 10px;
 outline: none;
+border: 1px solid var(--blue);
+color: var(--blue);
+
 border-radius: 50px;
-border: 1px solid var(--black);
+
 
 
 
 }
+/* bottom division */
 .bottom-md{
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -297,8 +321,8 @@ color: saddlebrown;
     background-color: var(--blue);
 }
 
-
-#sales-tabulated{
+/* table design */
+.table {
     border-collapse: collapse;
     width: 100%;
     box-shadow: -15px -15px rgba(255,255,255,0.5),
@@ -309,15 +333,15 @@ color: saddlebrown;
 
 
 }
-#sales-tabulated th{
+.table th{
 margin-bottom: 25px;
 }
-#sales-tabulated td, #sales-tabulated th{
+.table td, .table th{
     /* padding: 2.5px 0; */
     padding: 5px 20px;
    
 }
-#sales-tabulated th{
+.table th{
     text-align: left;
     border-bottom: 2px solid var(--black);
     color: gray;
@@ -327,7 +351,7 @@ margin-bottom: 25px;
     display: flex;
     justify-content: end;
 }
-#sales-tabulated .sales-title{
+.table .sales-title{
     margin-top: 10px;
     color: var(--black);
     font-weight: bold;
@@ -349,15 +373,40 @@ margin-bottom: 25px;
 
 
 /* Media query smaller screens */ 
-@media only screen and (max-width: 600px){
-    .notifications-wrapper{
-        grid-template-columns: 1fr 8fr;
+@media only screen and (max-width: 600px) {
+    .harmburger-menu{
+        display: block;
     }
-   .side-pane{
-       display: none;
-   }
+    .side-pane{
+        left: -1000px;
+        position: absolute;
+    }
+   
+    .top-nav{
+        flex-direction: column;
+        padding: 0 ;
+        width: 100%;
+    } 
+    .main-navbar{
+        padding: 0;
+    }
+    .import{
+        height: 20px;
+        padding: 5px ;
+        width: 100px;
+        text-align: center;
+    }
+    .export{
+        height: 20px;
+        width: 70px;
+        text-align: center;
+        padding: 5px;
+    }
+    
+   
    .chart-js{
-       width: 40%;
+       width: 80%;
+       margin: auto;
    }
    .bottom-md{
        grid-template-columns: repeat(1, 1fr);
@@ -374,21 +423,51 @@ margin-bottom: 25px;
        text-align: center;
    }
    .sales-history{
-   width: 30%;
+   width: 100%;
 }
 
-   #sales-tabulated{
-       width: 50%;
-   }
-   .sales{
+   .sales {
        grid-template-columns: repeat(1, 1fr);
+       margin: auto;
    }
+
    .sales > div{
-       margin: 0;
+       margin: 10px auto;
+       
+   }
+   .sale-product{
+       width: 100%;
    }
    
-   #sales-tabulated td, #sales-tabulated th{
-    padding: 5px 10px;
+   
+   /* Responsive table design */
+   .table thead{
+       display: none;
+   }
+   
+   .table,
+   .table tbody,
+   .table tr,
+   .table td{
+       display: block;
+       width: 100%;
+   }
+
+   .table tr{
+       margin-bottom: 10px;
+       border: 1px solid #000;
+   }
+   .table tbody tr td{
+       text-align: right;
+       padding-left: 50%;
+       position: relative;
+   }
+   .table td::before{
+       content: attr(data-label);
+       position: absolute;
+       left: 0;
+       text-align: left;
+       padding-left: 5px;
    }
 }
 

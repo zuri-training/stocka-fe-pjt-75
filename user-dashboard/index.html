@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <title>User | Stocka</title>
+
     <link rel="stylesheet" href="css/style.css" />
     <link rel='stylesheet' href="css/notifications.css" />
     <link
@@ -13,11 +16,14 @@
       crossorigin="anonymous"
     />
 
-    <title>Document</title>
+    
   </head>
   <body>
    
     <nav class="main-navbar">
+      <div class="harmburger-menu">
+        <i class="fas fa-bars"></i>
+      </div>
       <div class="nav-logo">
         <img src="assets/images/Logo.png" class="logo-img" />
       </div>
@@ -57,7 +63,7 @@
         </li>
       </div>
       <div class="main">
-        <div class="top-nav">
+         <div class="top-nav">
           <div>
             <h3>Dashboard</h3>
           </div>
@@ -71,8 +77,8 @@
 
             <div class="currency">Currency-(₦)Naira</div>
           </div>
-        </div>
-        <div class="bottom-md">
+        </div> 
+         <div class="bottom-md">
           <div class="chart">
             <div class="chart-js">
               <div class="currency-rate">
@@ -87,8 +93,8 @@
                   <button class="month-btn">Month</button>
                 </div>
               </div>
-              <div class="chart-js">
-                <canvas id="mychart"> </canvas>
+              <div class="chart">
+                <canvas id="mychart"width="400"> </canvas>
               </div>
             </div>
             <div class="sales">
@@ -120,63 +126,66 @@
             </div>
 
             <div class="sales-history">
-              <table id="sales-tabulated">
+              <table class="table">
                 <tr>
                   <td class="sales-title">Sales history</td>
                 </tr>
-                <tr>
+                <thead>
                   <th>Product</th>
                   <th>Unit</th>
                   <th>Price</th>
                   <th>Quantity</th>
                   <th>Date</th>
                   <th>Status</th>
-                </tr>
-                <tr>
-                  <td>Sugar</td>
-                  <td>kg</td>
-                  <td>1000</td>
-                  <td>20</td>
-                  <td>20/06/2021</td>
-                  <td>In stock</td>
-                </tr>
-                <tr>
-                  <td>Cassava</td>
-                  <td>kg</td>
-                  <td>600</td>
-                  <td>300</td>
-                  <td>19/05/21</td>
-                  <td>Low in stock</td>
-                </tr>
-                <tr>
-                  <td>Yam</td>
-                  <td>kg</td>
-                  <td>700</td>
-                  <td>15</td>
-                  <td>19/05/2021</td>
-                  <td>in stock</td>
-                </tr>
-                <tr>
-                  <td>Teleision</td>
-                  <td>kg</td>
-                  <td>50,000</td>
-                  <td>400</td>
-                  <td>19/05/2021</td>
-                  <td>out of stock</td>
-                </tr>
-                <tr>
-                  <td>Rubber</td>
-                  <td>kg</td>
-                  <td>15,000</td>
-                  <td>4,000</td>
-                  <td>19/05/2021</td>
-                  <td>in stock</td>
-                </tr>
-                <tr class="pagination">
-                  <td>
-                    <a>See all</a>
-                  </td>
-                </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="Product">Sugar</td>
+                    <td data-label="Unit">kg</td>
+                    <td data-label="Price">1000</td>
+                    <td data-label="Quantity">20</td>
+                    <td data-label="Date">20/06/2021</td>
+                    <td data-label="Status">In stock</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Product">Cassava</td>
+                    <td data-label="Unit">kg</td>
+                    <td data-label="Price">600</td>
+                    <td data-label="Quantity">300</td>
+                    <td data-label="Date">19/05/21</td>
+                    <td data-label="Status">Low in stock</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Product">Yam</td>
+                    <td data-label="Unit">kg</td>
+                    <td data-label="Price">700</td>
+                    <td data-label="Quantity">15</td>
+                    <td data-label="Date">19/05/2021</td>
+                    <td data-label="Status">in stock</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Product">Teleision</td>
+                    <td data-label="Unit">kg</td>
+                    <td data-label="Price">50,000</td>
+                    <td data-label="Quantity">400</td>
+                    <td data-label="Date">19/05/2021</td>
+                    <td data-label="Status">out of stock</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Product">Rubber</td>
+                    <td data-label="Unit">kg</td>
+                    <td data-label="Price">15,000</td>
+                    <td data-label="Quantity">4,000</td>
+                    <td data-label="Date">19/05/2021</td>
+                    <td data-label="Status">in stock</td>
+                  </tr>
+                  <tr class="pagination">
+                    <td>
+                      <a>See all</a>
+                    </td>
+                  </tr>
+                </tbody>
+                
               </table>
             </div>
           </div>
@@ -255,7 +264,7 @@
               <button class="tips-read-more">Read More</button>
             </div>
           </div>
-        </div>
+        </div> 
       </div>
     </div>
 
