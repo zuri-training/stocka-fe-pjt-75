@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <title>Report| Stocka</title>
+
+    <link rel="stylesheet" href="css/report-page.css" />
+    
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="main-navbar">
+      <div class="harmburger-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="nav-logo">
+        <img src="assets/images/Logo.png" class="logo-img" />
+      </div>
+      <div class="main-nav">
+        <div id="notifications-btn " class="profile-md nav-btn">
+          <i class="fas fa-bell bell"></i>
+          <span class="badge">2</span>
+        </div>
+        <div class="nav-img">
+          <img src="assets/images/Ellipse 6.png" class="nav-avatar" />
+        </div>
+      </div>
+    </nav>
+    <div class="main-wrapper">
+      <div class="side-pane">
+        <li>
+          <a href="#Dashboard"><i class="fas fa-chess-board"></i> Dashboard</a>
+        </li>
+        <li>
+          <a href="#Profile"><i class="far fa-user-circle"></i> Profile</a>
+        </li>
+        <li>
+          <a href="#Stores"><i class="fas fa-store"></i> Stores</a>
+        </li>
+        <li>
+          <a href="#Products"><i class="fas fa-columns"></i> Products</a>
+        </li>
+        <li>
+          <a href="#Report"><i class="fas fa-chart-line"></i> Report</a>
+        </li>
+        <li>
+          <a href="#Settings"><i class="fas fa-cog"></i> Settings</a>
+        </li>
+        <li>
+          <a href="#Sign out"> <i class="fas fa-sign-out-alt"></i> Sign out</a>
+        </li>
+      </div>
+      <div class="main-body">
+        <div class="top-report-section">
+          <div class="title">
+            <h2>Report</h2>
+          </div>
+          <div class="date">
+            <div class="show-report-date">
+              <p>
+                Show report for
+                <input type="date" data-date-inline-picker="true" />
+
+                <span class="report-date"
+                  ><i class="fas fa-caret-down"></i
+                ></span>
+              </p>
+            </div>
+            <div class="download-report">
+              <button class="download">Download report</button>
+            </div>
+          </div>
+        </div>
+        <div class="md-report-section">
+          <div class="prototype">
+            <div class="products-section">
+              <div class="products tab-block">
+                <div>
+                  <!-- <img src="./assets/images/product.png" class="product-img" /> -->
+                  <i class="fas fa-columns product-icon"></i>
+                </div>
+
+                <div>
+                  <p>All Products</p>
+                  <p>2000</p>
+                </div>
+              </div>
+              <div class="sales tab-block">
+                <div>
+                  <i class="fas fa-chart-bar sales-icon"></i>
+                </div>
+
+                <div>
+                  <p>Total sales</p>
+                  <p>2000</p>
+                </div>
+              </div>
+              <div class="revenue tab-block">
+                <div>
+                  <i class="fas fa-money-bill revenue-icon"></i>
+                </div>
+
+                <div>
+                  <p>Revenue</p>
+                  <p>2000</p>
+                </div>
+              </div>
+              <div class="profit tab-block">
+                <div>
+                  <i class="fas fa-chart-line gross-icon"></i>
+                </div>
+
+                <div>
+                  <p>Gross Profit</p>
+                  <p>2000</p>
+                </div>
+              </div>
+            </div>
+            <div class="chart-sales">
+              <p>Daily Sales</p>
+              <canvas id="myChart" width="200" height="100">
+
+              </canvas>
+            </div>
+          </div>
+
+          <div class="perf-section">
+            <div class="top-perf">
+              <h4>Top Perfomers</h4>
+              <div class="item-group">
+                <p>1. Cassava</p>
+                <div class="img-polygon">
+                  <img src="./assets/images/polygon.png" class="polygon-up" />
+                  <small>70%</small>
+                </div>
+              </div>
+              <div class="item-group">
+                <p>2. Yam</p>
+                <div class="img-polygon">
+                  <img src="./assets/images/polygon.png" class="polygon-up" />
+                  <small>70%</small>
+                </div>
+              </div>
+              <div class="item-group">
+                <p>3. Television</p>
+                <div class="img-polygon">
+                  <img src="./assets/images/polygon.png" class="polygon-up" />
+                  <small>70%</small>
+                </div>
+              </div>
+              <div class="item-group">
+                <p>4. Rubber</p>
+                <div class="img-polygon">
+                  <img src="./assets/images/polygon.png" class="polygon-up" />
+                  <small>70%</small>
+                </div>
+              </div>
+              <div class="item-group">
+                <p>5. Sorghum</p>
+                <div class="img-polygon">
+                  <img src="./assets/images/polygon.png" class="polygon-up" />
+                  <small>70%</small>
+                </div>
+              </div>
+              <div class="item-group">
+                <p>6. Palm oil</p>
+                <div class="img-polygon">
+                  <img src="./assets/images/polygon.png" class="polygon-up" />
+                  <small>70%</small>
+                </div>
+              </div>
+              <div class="item-group">
+                <p>7. Potato</p>
+                <div class="img-polygon">
+                  <img src="./assets/images/polygon.png" class="polygon-up" />
+                  <small>70%</small>
+                </div>
+              </div>
+              <div class="item-group">
+                <p>8. Tomatoes</p>
+                <div class="img-polygon">
+                  <img src="./assets/images/polygon.png" class="polygon-up" />
+                  <small>70%</small>
+                </div>
+              </div>
+            </div>
+            <div class="worst-perf">
+              <h4>Worst Perfomers</h4>
+              <div class="item-group">
+                <p>1. Cassava</p>
+                <div class="img-polygon">
+                  <img
+                    src="./assets/images/polygon2.png"
+                    class="polygon down"
+                  />
+                  <small>-70%</small>
+                </div>
+              </div>
+              <div class="item-group">
+                <p>2. Yam</p>
+                <div class="img-polygon">
+                  <img
+                    src="./assets/images/polygon2.png"
+                    class="polygon down"
+                  />
+                  <small>-70%</small>
+                </div>
+              </div>
+              <div class="item-group">
+                <p>3. Television</p>
+                <div class="img-polygon">
+                  <img
+                    src="./assets/images/polygon2.png"
+                    class="polygon down"
+                  />
+                  <small>-70%</small>
+                </div>
+              </div>
+              <div class="item-group">
+                <p>4. Rubber</p>
+                <div class="img-polygon">
+                  <img
+                    src="./assets/images/polygon2.png"
+                    class="polygon down"
+                  />
+                  <small>-70%</small>
+                </div>
+              </div>
+              <div class="item-group">
+                <p>5. Sorghum</p>
+                <div class="img-polygon">
+                  <img
+                    src="./assets/images/polygon2.png"
+                    class="polygon down"
+                  />
+                  <small>-70%</small>
+                </div>
+              </div>
+              <div class="item-group">
+                <p>6. Palm oil</p>
+                <div class="img-polygon">
+                  <img
+                    src="./assets/images/polygon2.png"
+                    class="polygon down"
+                  />
+                  <small>-70%</small>
+                </div>
+              </div>
+              <div class="item-group">
+                <p>7. Potato</p>
+                <div class="img-polygon">
+                  <img
+                    src="./assets/images/polygon2.png"
+                    class="polygon down"
+                  />
+                  <small>-70%</small>
+                </div>
+              </div>
+              <div class="item-group">
+                <p>8. Tomatoes</p>
+                <div class="img-polygon">
+                  <img
+                    src="./assets/images/polygon2.png"
+                    class="polygon down"
+                  />
+                  <small>70%</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-report-section">
+          <div class="sales-history">
+            <div class="table-title">
+              <p>Sales History</p>
+            </div>
+
+            <table class="table">
+              <thead>
+                <th>Product</th>
+                <th>Unit</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Date</th>
+                <th>Status</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="Product">Sugar</td>
+                  <td data-label="Unit">kg</td>
+                  <td data-label="Price">1000</td>
+                  <td data-label="Quantity">20</td>
+                  <td data-label="Date">20/06/2021</td>
+                  <td data-label="Status">In stock</td>
+                </tr>
+                <tr>
+                  <td data-label="Product">Cassava</td>
+                  <td data-label="Unit">kg</td>
+                  <td data-label="Price">600</td>
+                  <td data-label="Quantity">300</td>
+                  <td data-label="Date">19/05/21</td>
+                  <td data-label="Status">Low in stock</td>
+                </tr>
+                <tr>
+                  <td data-label="Product">Yam</td>
+                  <td data-label="Unit">kg</td>
+                  <td data-label="Price">700</td>
+                  <td data-label="Quantity">15</td>
+                  <td data-label="Date">19/05/2021</td>
+                  <td data-label="Status">in stock</td>
+                </tr>
+                <tr>
+                  <td data-label="Product">Teleision</td>
+                  <td data-label="Unit">kg</td>
+                  <td data-label="Price">50,000</td>
+                  <td data-label="Quantity">400</td>
+                  <td data-label="Date">19/05/2021</td>
+                  <td data-label="Status">out of stock</td>
+                </tr>
+                <tr>
+                  <td data-label="Product">Rubber</td>
+                  <td data-label="Unit">kg</td>
+                  <td data-label="Price">15,000</td>
+                  <td data-label="Quantity">4,000</td>
+                  <td data-label="Date">19/05/2021</td>
+                  <td data-label="Status">in stock</td>
+                </tr>
+                <tr>
+                  <td data-label="Product">Rubber</td>
+                  <td data-label="Unit">kg</td>
+                  <td data-label="Price">15,000</td>
+                  <td data-label="Quantity">4,000</td>
+                  <td data-label="Date">19/05/2021</td>
+                  <td data-label="Status">in stock</td>
+                </tr>
+                <tr>
+                  <td data-label="Product">Rubber</td>
+                  <td data-label="Unit">kg</td>
+                  <td data-label="Price">15,000</td>
+                  <td data-label="Quantity">4,000</td>
+                  <td data-label="Date">19/05/2021</td>
+                  <td data-label="Status">in stock</td>
+                </tr>
+                <tr>
+                  <td data-label="Product">Rubber</td>
+                  <td data-label="Unit">kg</td>
+                  <td data-label="Price">15,000</td>
+                  <td data-label="Quantity">4,000</td>
+                  <td data-label="Date">19/05/2021</td>
+                  <td data-label="Status">in stock</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="next-page">
+              <p>Next <i class="fas fa-caret-right caret-right"></i> </p>
+            </div>
+          </div>
+          <div class="pie-chart">
+            <h3>Sales by category</h3>
+            <canvas id="pieChart" width="50" height="50"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.4.0/dist/chart.min.js"></script>
+  <script src="./script/report-page.js"></script>
+</body>
+</html>
