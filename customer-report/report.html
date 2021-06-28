@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>report | Stocka</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://www.jsdelivr.com/package/npm/chart.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+</head>
+
+<body>
+    <div class="my-app">
+        <nav class="nav">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./assets/images/logo.png" alt="logo" />
+                </div>
+                <!-- inline-form -->
+                <form action="" class="form">
+                    <input type="text" placeholder="search" />
+                    <button> <img src="./assets/images/search.png" alt=""></button>
+                </form>
+                <div class="avatar-nav avatar">
+                    <img class="img-notify" src="./assets/images/notify.png" alt="">
+                    <img class="img-profile" src="./assets/images/img.png" alt="avatar" width="50px" />
+                </div>
+        </nav>
+        <div class="none burger" id="menu">
+            <img src="./assets/images/menu.png" alt="" width="30px" height="20px">
+        </div>
+        <div class="main-content container" id="container">
+            <div class="sidebar" id="sidebar">
+
+                <div class="avatar">
+                    <a href=""> <span><img width="" src="./assets/images/grid-menu.png" alt="trophy" /></span>
+                        <span>Dashboard</span></a>
+
+                </div>
+
+                <div class="list-group">
+                    <ul class="items">
+                        <li><a href=""> <span><img width="" src="./assets/images/profile.png" alt="trophy" /></span>
+                                <span>Profile</span></a></li>
+
+                        <li><a href=""> <span><img width="" src="./assets/images/store.png" alt="trophy" /></span>
+                                <span>Stores</span></a></li>
+                        <li><a href=""> <span><img width="" src="./assets/images/product.png" alt="trophy" /></span>
+                                <span>Products</span></a></li>
+                        <li><a href=""> <span><img width="" src="./assets/images/report-.png" alt="trophy" /></span>
+                                <span>Report</span></a></li>
+                        <li><a href=""> <span><img width="" src="./assets/images/settings.png" alt="trophy" /></span>
+                                <span>Settings</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="sign-out">
+                    <a href=""><span><img src="./assets/images/logout.png" alt="logout" /></span><span>Sign
+                            Out</span></a>
+                </div>
+
+            </div>
+            <div class="main">
+                <div class="top first">
+                    <h1 class="cta">Report</h1>
+                    <div class="filter">
+                        <p>Showing for: </p>
+                        <div class="date">
+                            <input type="date" name="date" id="date" value="2021-06-03">
+                            <!-- <img src="./assets/images/dropdown.png" alt="dropdown" /> -->
+                        </div>
+                        <button class="btn">Download report</button>
+
+                    </div>
+                </div>
+                <div class="second">
+                    <div class="commodity">
+                        <div class="p p1">
+                            <img src="./assets/images/product-blue.png">
+                            <div class="cta">
+                                <h4>All products</h4>
+                                <p>2000</p>
+                            </div>
+                        </div>
+                        <div class="p p2">
+                            <img src="./assets/images/sales.png" alt="">
+                            <div class="cta">
+                                <h4>Total Sales</h4>
+                                <p>2000</p>
+                            </div>
+                        </div>
+                        <div class="p p3">
+                            <img src="./assets/images/revenue.png" alt="">
+                            <div class="cta">
+                                <h4>Total Revenue</h4>
+                                <p>2000</p>
+                            </div>
+                        </div>
+                        <div class="p p4">
+                            <img src="./assets/images/gross-profit.png" alt="">
+                            <div class="cta">
+                                <h4>Gross Profit</h4>
+                                <p>2000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chart chart-1">
+
+                        <div class="line" id="myline">
+                            <canvas id="line"></canvas>
+                        </div>
+                        <!-- <h2 class="cta">Sales History</h2> -->
+
+
+
+                    </div>
+
+                    <div class="performance">
+                        <!-- <h2 class="cta">Performers</h2> -->
+                        <div class="perform">
+                            <div class="effect positive">
+                                <h3 class="cta">Top Performers</h3>
+                                <ol>
+                                    <li>
+                                        <span class="cta">Cassava</span>
+                                        <span class="text">
+                                            <img src="./assets/images/polygon-green.png" alt="">
+                                            <span class="percent">+70%</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="cta">Sugar</span>
+                                        <span class="text">
+                                            <img src="./assets/images/polygon-green.png" alt="">
+                                            <span class="percent">+70%</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="cta">Yam</span>
+                                        <span class="text">
+                                            <img src="./assets/images/polygon-green.png" alt="">
+                                            <span class="percent">+70%</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="cta">Cassava</span>
+                                        <span class="text">
+                                            <img src="./assets/images/polygon-green.png" alt="">
+                                            <span class="percent">+70%</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="cta">Sugar</span>
+                                        <span class="text">
+                                            <img src="./assets/images/polygon-green.png" alt="">
+                                            <span class="percent">+70%</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="cta">Yam</span>
+                                        <span class="text">
+                                            <img src="./assets/images/polygon-green.png" alt="">
+                                            <span class="percent">+70%</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="cta">Yam</span>
+                                        <span class="text">
+                                            <img src="./assets/images/polygon-green.png" alt="">
+                                            <span class="percent">+70%</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="cta">Cassava</span>
+                                        <span class="text">
+                                            <img src="./assets/images/polygon-green.png" alt="">
+                                            <span class="percent">+70%</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="cta">Sugar</span>
+                                        <span class="text">
+                                            <img src="./assets/images/polygon-green.png" alt="">
+                                            <span class="percent">+70%</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="cta">Yam</span>
+                                        <span class="text">
+                                            <img src="./assets/images/polygon-green.png" alt="">
+                                            <span class="percent">+70%</span>
+                                        </span>
+                                    </li>
+
+                                </ol>
+                            </div>
+                            <div class="effect negative">
+                                <h3 class="cta">Worst Performers</h3>
+                                <ol>
+                                    <li>
+                                        <span class="cta">Cassava</span>
+                                        <span class="text">
+                                            <img src="./assets/images/polygon-red.png" alt="">
+                                            <span class="percent">-70%</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="cta">Sugar</span>
+                                        <span class="text">
+                                            <img src="./assets/images/polygon-red.png" alt="">
+                                            <span class="percent">-70%</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="cta">Yam</span>
+                                        <span class="text">
+                                            <img src="./assets/images/polygon-red.png" alt="">
+                                            <span class="percent">-70%</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="cta">Cassava</span>
+                                        <span class="text">
+                                            <img src="./assets/images/polygon-red.png" alt="">
+                                            <span class="percent">-70%</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="cta">Sugar</span>
+                                        <span class="text">
+                                            <img src="./assets/images/polygon-red.png" alt="">
+                                            <span class="percent">-70%</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="cta">Yam</span>
+                                        <span class="text">
+                                            <img src="./assets/images/polygon-red.png" alt="">
+                                            <span class="percent">-70%</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="cta">Yam</span>
+                                        <span class="text">
+                                            <img src="./assets/images/polygon-red.png" alt="">
+                                            <span class="percent">-70%</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="cta">Cassava</span>
+                                        <span class="text">
+                                            <img src="./assets/images/polygon-red.png" alt="">
+                                            <span class="percent">-70%</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="cta">Sugar</span>
+                                        <span class="text">
+                                            <img src="./assets/images/polygon-red.png" alt="">
+                                            <span class="percent">-70%</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="cta">Yam</span>
+                                        <span class="text">
+                                            <img src="./assets/images/polygon-red.png" alt="">
+                                            <span class="percent">-70%</span>
+                                        </span>
+                                    </li>
+
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="third">
+                    <div class="table sales-tables table-group">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Unit</th>
+                                    <th>Price</th>
+                                    <th>Quantity</th>
+                                    <th>Date</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Sugar</td>
+                                    <td>Kg</td>
+                                    <td>1000</td>
+                                    <td>20</td>
+                                    <td>20/06/2021</td>
+                                    <td>In stock</td>
+                                </tr>
+                                <tr>
+                                    <td>Cassava</td>
+                                    <td>Kg</td>
+                                    <td>600</td>
+                                    <td>300</td>
+                                    <td>19/06/2021</td>
+                                    <td>In stock</td>
+                                </tr>
+                                <tr>
+                                    <td>Yam</td>
+                                    <td>Kg</td>
+                                    <td>700</td>
+                                    <td>15</td>
+                                    <td>20/06/2021</td>
+                                    <td>Low in stock</td>
+                                </tr>
+                                <tr>
+                                    <td>Television</td>
+                                    <td>l</td>
+                                    <td>50,000</td>
+                                    <td>400</td>
+                                    <td>20/06/2021</td>
+                                    <td>Out of stock</td>
+                                </tr>
+                                <tr>
+                                    <td>Cassava</td>
+                                    <td>Kg</td>
+                                    <td>600</td>
+                                    <td>300</td>
+                                    <td>19/06/2021</td>
+                                    <td>In stock</td>
+                                </tr>
+                                <tr>
+                                    <td>Yam</td>
+                                    <td>Kg</td>
+                                    <td>700</td>
+                                    <td>15</td>
+                                    <td>20/06/2021</td>
+                                    <td>In stock</td>
+                                </tr>
+                                <tr>
+                                    <td>Television</td>
+                                    <td>l</td>
+                                    <td>50,000</td>
+                                    <td>400</td>
+                                    <td>20/06/2021</td>
+                                    <td>In stock</td>
+                                </tr>
+                                <tr>
+                                    <td>Television</td>
+                                    <td>l</td>
+                                    <td>50,000</td>
+                                    <td>400</td>
+                                    <td>20/06/2021</td>
+                                    <td>In stock</td>
+                                </tr>
+                                <tr>
+                                    <td>Cassava</td>
+                                    <td>Kg</td>
+                                    <td>600</td>
+                                    <td>300</td>
+                                    <td>19/06/2021</td>
+                                    <td>Low in stock</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="skip">
+                            <a href=""><span class="next"><img src="./assets/images/prev.png" alt=""><span
+                                        class="txt">Prev</span> </span></a>
+                            <a href=""><span class="next"><span class="txt">Next</span> <img
+                                        src="./assets/images/next.png" alt=""></span></a>
+                        </div>
+                    </div>
+                    <div class="chart chart-2">
+                        <h3>Sales by Category</h3>
+                        <canvas id="pie"></canvas>
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+        <script src="./chart.js"></script>
+        <script src="./main.js"></script>
+</body>
+
+</html>
