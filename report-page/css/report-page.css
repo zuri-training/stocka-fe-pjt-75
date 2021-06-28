@@ -320,8 +320,12 @@ margin-bottom: 25px;
     color: var(--darkblue);
 }
 
+.side-pane.active{
+    left: 50%;
+}
 /* Small screens */
 @media screen and (max-width: 768px){
+
     /* top report section */
     .top-report-section{
         flex-direction: column;
