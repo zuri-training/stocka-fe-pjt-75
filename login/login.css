@@ -145,7 +145,7 @@ body {
 
 .formBx .form form .passwdBox #toggle {
   position: absolute;
-  top: 44.2%;
+  top: 48.7%;
   right: 25.5%;
   width: 16px;
   height: 16px;
@@ -169,7 +169,7 @@ body {
   /* font-weight: 400; */
   border: none;
   border-radius: 6px;
-  margin-bottom: 2%;
+  margin-bottom: 8%;
   vertical-align: middle;
 }
 
@@ -200,5 +200,5 @@ body {
   flex-direction: column;
   position: relative;
   text-align: center;
-  left: 1%;
+  left: 2%;
 }
