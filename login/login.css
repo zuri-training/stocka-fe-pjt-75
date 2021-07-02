@@ -136,13 +136,9 @@ body {
   font-size: 0.9rem;
 }
 
-/* .formBx .form form .input label {
-  margin-bottom: 10%;
-} */
-
-/* .formBx .form form .passwdBox label {
-  margin-left: 4%;
-} */
+.formBx .form form .emailBox label {
+  margin-left: -5%;
+}
 
 .formBx .form form .passwdBox #toggle {
   position: absolute;
