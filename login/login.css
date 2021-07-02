@@ -91,10 +91,11 @@ body {
   position: relative;
   left: 75%;
   top: 5%;
+  color: #093e9c;
 }
 
 .container .formBx > a:visited {
-  color: #08378c;
+  color: #093e9c;
 }
 
 .formBx .form {
@@ -107,11 +108,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .formBx .form form input {
   width: 110%;
-  margin-bottom: 5%;
+  margin-top: 2%;
+  margin-bottom: 8%;
   padding: 10px;
   outline: none;
   font-family: inherit;
@@ -122,7 +125,7 @@ body {
 }
 
 .formBx .form form .input input:focus {
-  border-color: #08378c;
+  border-color: #093e9c;
 }
 
 .formBx .form form .emailBox input {
@@ -161,11 +164,11 @@ body {
   cursor: pointer;
   padding: 10px 25px;
   color: #fff;
-  background: #08378c;
+  background: #093e9c;
   font-size: 0.7rem;
   /* font-weight: 400; */
   border: none;
-  border-radius: 17px;
+  border-radius: 6px;
   margin-bottom: 2%;
   vertical-align: middle;
 }
@@ -192,10 +195,10 @@ body {
 }
 
 .formBx .form form .pageBtm {
-  margin-top: 2%;
+/*   margin-top: 2%; */
   display: flex;
   flex-direction: column;
-  position: relative;
+/*   position: relative; */
   text-align: center;
-  left: 1%;
+/*   left: 1%; */
 }
