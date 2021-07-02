@@ -118,12 +118,12 @@
                 <!-- <a class="style-2" href="#">ADD PRODUCT</a> -->
 
 
-                <div class="dropdown2">
+                <div class="modal2">
                    
-                    <div class="dropbtn2" onclick="addProduct()">
-                     <span class="dropbtn2">ADD PRODUCT</span>
+                    <div class="modalbtn2" onclick="addProduct()">
+                     <span class="modalbtn2">ADD PRODUCT</span>
                    </div>
-                     <div class="dropdown-content2">
+                     <div class="modal-content2">
 
                             <div class="input-container NAME">
                                 <label for="Product Name">Product Name</label>
@@ -171,61 +171,67 @@
                 </a>  -->
                 
                 <a class="style-1" href="#">EXPORT</a>
-
-                <div class="dropdown">
-                    <span class="dropbtn" onclick="toggleImport()">IMPORT</span>
-                    <div class="dropdown-content">
-                        <center>
-                            <div>
-                               <strong>Do you want to import a new Stocka File? &nbsp;&nbsp; <span onclick="toggleImport()">x</span></strong> 
-                                <div class="menu">
-                                    <p><input type="checkbox"> I understand that importing a new stocka file will
-                                    <br> override the existing file</p>
-                                </div>   
-
-                                <div class="drive">
-                                    <div class="drivecontent">
-                                        <i class="fab fa-google-drive "></i>
-                                        <br>
-                                        import from google drive
-                                    </div>
-                                    <br>
-                                    <div class="drivecontent2">
-                                        <i class="fas fa-folder-plus"></i>
-                                        <br>
-                                        import from device folder
-                                    </div>
-                                </div >
-                                
-                                <br><br>
-                                <br><br>
-                                <br><br>
-
-                                <!-- <center> -->
-                                    <div class="custom-file">
-                                        <!-- <input class ="style1" type="file"> -->
-                                        <div class="custom-upload">
-                                            <label for="file-upload">
-                                                Custom Upload &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa fa-caret-down"></i>
-                                            </label>
-                                        </div>
-                                        <div class="upload-button"> 
-                                            Upload
-                                        </div>
-                                    </div>
-                                <!-- </center> -->
-                                    <input id="file-upload" type="file"/> 
-
-                               
-                               <br><br>
-                                <button style="background-color:#093E9c; " type="submit">IMPORT</button>
-                            </div>  
-                        </center>
+                  <div class="modal">
+                    <div class="modal-wrapper">
+                            <span class="modalbtn" onclick="toggleImport()">IMPORT</span>
+                            <div class="modal-content">
+                                <center>
+                                    <div>
+                                       <strong>Do you want to import a new Stocka File? &nbsp;&nbsp; <span onclick="toggleImport()">x</span></strong> 
+                                        <div class="menu">
+                                            <p><input type="checkbox"> I understand that importing a new stocka file will
+                                            <br> override the existing file</p>
+                                        </div>   
+        
+                                        <div class="drive">
+                                            <div class="drivecontent">
+                                                <i class="fab fa-google-drive "></i>
+                                                <br>
+                                                import from google drive
+                                            </div>
+                                            <br>
+                                            <div class="drivecontent2">
+                                                <i class="fas fa-folder-plus"></i>
+                                                <br>
+                                                import from device folder
+                                            </div>
+                                        </div >
+                                        
+                                        <br><br>
+                                        <br><br>
+                                        <br><br>
+        
+                                        <!-- <center> -->
+                                            <div class="custom-file">
+                                                <!-- <input class ="style1" type="file"> -->
+                                                <div class="custom-upload">
+                                                    <label for="file-upload">
+                                                        Custom Upload &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa fa-caret-down"></i>
+                                                    </label>
+                                                </div>
+                                                <div class="upload-button"> 
+                                                    Upload
+                                                </div>
+                                            </div>
+                                        <!-- </center> -->
+                                            <input id="file-upload" type="file"/> 
+        
+                                       
+                                       <br><br>
+                                        <button style="background-color:#093E9c; " type="submit">IMPORT</button>
+                                    </div>  
+                                </center>
+                            </div>
+                        </div> 
+        
+        
                     </div>
-                </div> 
 
 
-            </div>
+                      
+                  
+                </div>
+               
         
 
             <br>
@@ -408,7 +414,7 @@
 
         function toggleImport() {
 
-            var x = document.querySelector(".dropdown-content");
+            var x = document.querySelector(".modal-content");
 
             if (x.style.display === "none" || x.style.display === "") {
                 x.style.display = "block";
@@ -420,17 +426,15 @@
         }
 
          function addProduct () {
-            var x = document.querySelector(".dropdown-content2");
+            var x = document.querySelector(".modal-content2");
             if (x.style.display === "none" || x.style.display === "") {
             x.style.display = "block";
             } else if(x.style.display === "block")  {
             x.style.display = "none";
             }
          }
-
-    
-
-        
-   </script> 
+     
+   </script>
+</div>
 </body>
 </html>

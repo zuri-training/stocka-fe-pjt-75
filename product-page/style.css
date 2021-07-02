@@ -75,7 +75,9 @@ input[type=text]{
 
 .inner-body{
     width: 78%;
-    background-color: #fff;
+    /* background-color: white; */
+    background-color: #f9f9f9;
+
     /* height: 100vh; */
     /* display: inline-block; */
     float: right;
@@ -83,6 +85,7 @@ input[type=text]{
     border: 1px solid #ccc;
     border-radius: 8px;
     margin-top: 10px;
+    font-weight: 800;
 }
 
 .input-container{
@@ -219,7 +222,9 @@ table tr{
 td {
     padding-top:10px;
     padding-bottom:10px;
-    padding-right:10px;   
+    padding-right:10px;  
+    color:rgb(10, 10, 10);
+    /* font-weight: 800; */
   }
   
   td:first-child {
@@ -242,7 +247,7 @@ td {
 
 /* ----------------------- */
 
-.dropdown {
+.modal {
     font-size: 16px;  
     color: black;
     padding: 14px 16px;
@@ -256,7 +261,7 @@ td {
     padding: 12px;
     margin: 10px 0 0 10px;
   }
-  .dropdown-content {
+  .modal-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -307,7 +312,7 @@ font-size: 12px;
     display: inline-block;
 }
 
-  .dropdown2 {
+  .modal2 {
     font-size: 16px;  
     color: black;
     padding: 14px 16px;
@@ -321,7 +326,7 @@ font-size: 12px;
     padding: 12px;
     margin: 10px 0 0 10px;
   }
-  .dropdown-content2 {
+  .modal-content2 {
     display: none;
      position: absolute;
     background-color: #f9f9f9;
@@ -333,17 +338,17 @@ font-size: 12px;
     padding: 18px;
   }
   
-  .dropdown-content a:hover {
+   .modal-content a:hover {
     background-color: #ddd;  
-  }
-  .dropdown:hover .dropdown-content {
+  } 
+  .modal:hover .modal-content {
     /* display: block; */
-  }
+  } */
   
-  .dropdown-content2 a:hover {
+  .modal-content2 a:hover {
     background-color: #ddd;
   }
-  .dropdown2:hover .dropdown-content2 {
+  .modal:hover .dropdown-content2 {
     /* display: block; */
   }
 
@@ -407,7 +412,10 @@ font-size: 12px;
     .sidebar-brand > img{
         width: 100px;
     }
-    .dropdown-content2{
+    .modal-content{
+        
+    }
+    .modal-content2{
         width: 100%; 
     }
 }
