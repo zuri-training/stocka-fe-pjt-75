@@ -266,7 +266,7 @@ form .pageBtm .check span input:checked::before {
   .formBx .form {
     position: relative;
     left: 0;
-    right: 0;
+    right: 3%;
   }
 
   .formBx .form form .pwd #toggle {
