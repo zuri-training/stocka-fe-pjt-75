@@ -40,11 +40,29 @@ var options = {
   }
 };
 
-var chart = new ApexCharts(document.querySelector("#users"), options);
-chart.render();
+var chart1 = new ApexCharts(document.querySelector("#users"), options);
+chart1.render();
 
+var options = {
+    series: [44, 55, 41, 17],
+    chart: {
+    type: 'donut',
+  },
+  responsive: [{
+    breakpoint: 220,
+    options: {
+      chart: {
+        width: "20px"
+      },
+      legend: {
+        position: 'bottom'
+      }
+    }
+  }]
+  };
 
-dates = ['April 13', 'May 13', 'June 13', 'July 13', 'August 13', 'September 13', 'June 13']
+  var chart2 = new ApexCharts(document.querySelector("#stock"), options);
+//   chart2.render();
 
 var options = {
     series: [{
@@ -80,5 +98,5 @@ var options = {
   };
 
 
-  var chart = new ApexCharts(document.querySelector("#revenue"), options);
-  chart.render();
+  var chart3 = new ApexCharts(document.querySelector("#revenue"), options);
+  chart3.render();

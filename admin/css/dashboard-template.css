@@ -125,7 +125,7 @@ body {
   left: 0;
   margin-left: 0;
   padding-bottom: 50px;
-
+z-index: 90;
   overflow-y: scroll;
 }
 .side-pane::-webkit-scrollbar {
