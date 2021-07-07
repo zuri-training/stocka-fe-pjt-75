@@ -1,58 +1,54 @@
-*,
-body,
-p {
+* {
   margin: 0;
   padding: 0;
 }
 
 .container {
   box-sizing: border-box;
-  width: 95%;
+  width: 90%;
   height: 100vh;
   display: flex;
   justify-content: space-evenly;
-  column-gap: 20px;
+  column-gap: 5%;
   font-family: "Source Sans Pro", sans-serif;
 }
 
 .container .imgBox {
-  width: 60%;
+  max-width: 50%;
   display: flex;
   justify-content: start;
   position: relative;
-  right: 1.5%;
+  right: 2.8%;
   overflow: hidden;
 }
 
 .container .imgBox .logo {
   position: absolute;
-  margin-left: 30px;
-  left: 5%;
-  top: 4%;
-  width: 20%;
-  height: 5%;
+  top: 3%;
+  left: 8%;
+  height: 6%;
   z-index: 1;
 }
 
-.container img .left {
+/* .container .imgBox .left {
   position: relative;
   width: 20%;
   height: 50%;
   left: 0;
-}
+} */
 
-.container img .right {
+/* .container .imgBox .right {
   position: relative;
   width: 80%;
   height: 98%;
   padding: 1% 0 1% 2%;
-}
+} */
 
 .formBx .form {
   width: 100%;
   height: 70%;
   position: relative;
-  right: 30%;
+  right: 13%;
   top: 10%;
   padding: 10px;
   display: flex;
@@ -71,6 +67,7 @@ p {
 
 .formBx .form h2 {
   font-family: "Poppins", sans-serif;
+  text-align: center;
 }
 
 .formBx .form h4 {
@@ -88,33 +85,27 @@ p {
   border-radius: 5px;
 }
 
-.formBx .form form .input label {
-  margin: 0 0 2px 5px;
-}
-
 .input input::placeholder {
   font-size: 0.8rem;
   padding-left: 1px;
 }
 
 .formBx .form form .input input:focus {
-  border-color: #08378c;
+  border-color: hsl(219, 89%, 29%);
 }
 
 .formBx .form form .fullName {
   margin-top: -7px;
 }
 
-.form form .cmpnyName #org + span {
+.form form .cmpnyName #org + small {
   position: relative;
   display: inline-block;
   width: 100%;
-  font-size: 0.8rem;
 }
 
-.form form .cmpnyName #org + span::after {
+.form form .cmpnyName #org + small::after {
   position: absolute;
-  right: 68%;
   top: -25px;
 }
 
@@ -122,7 +113,7 @@ p {
   border: 1px solid red;
 }
 
-.form form .cmpnyName #org:invalid + span::after {
+.form form .cmpnyName #org:invalid + small::after {
   content: "Input field is empty";
   color: red;
 }
@@ -147,18 +138,17 @@ p {
 
 .formBx .form form .pwd #toggle {
   position: absolute;
-  top: 40%;
+  top: 44%;
   right: 0;
-  /* transform: translateX(300px); */
-  width: 21px;
-  height: 21px;
-  background: url(./assets/eye.svg);
+  width: 16px;
+  height: 16px;
+  background: url(../images/eye.svg);
   background-size: cover;
   cursor: pointer;
 }
 
 .formBx .form form .pwd #toggle.hide {
-  background: url(./assets/eye-slash.svg);
+  background: url(../images/eye-slash.svg);
   background-size: cover;
 }
 
@@ -167,12 +157,14 @@ p {
   cursor: pointer;
   padding: 13px 20px;
   color: #fff;
-  background: #08378c;
-  font-size: 10px;
+  background: #093e9c;
+  font-size: 0.7rem;
   font-weight: 500;
   border: none;
-  border-radius: 17px;
+  border-radius: 6px;
   margin: 1rem 0 0.6rem 0;
+  vertical-align: middle;
+  position: relative;
 }
 
 .formBx .form form button:hover,
@@ -190,6 +182,7 @@ p {
 
 form .pageBtm .check {
   margin-top: 0.7rem;
+  display: flex;
 }
 
 form .pageBtm .check span {
@@ -206,6 +199,7 @@ form .pageBtm .check span input {
   border: 1px solid gray;
   vertical-align: -3px;
   color: green;
+  top: 4%;
 }
 
 form .pageBtm .check span input::before {
@@ -224,7 +218,8 @@ form .pageBtm .check span input:checked::before {
 .pageBtm .check label {
   display: inline-block;
   vertical-align: middle;
-  margin: 0 0 10px 5px;
+  text-align: center;
+  margin: 0 0 10px 10px;
 }
 
 .formBx .form form .btmPara {
@@ -234,66 +229,67 @@ form .pageBtm .check span input:checked::before {
 
 /********** Media Queries ***********/
 
-@media screen and (max-width: 1083px) and (max-height: 700px) {
-  .formBx .form h2 {
-    text-align: justify;
-    text-align: center;
-  }
-}
-
 @media screen and (max-width: 1300px) {
   .formBx {
     position: relative;
-    right: 0%;
     left: 5%;
   }
 }
 
 @media screen and (max-width: 1024px) {
+  .container {
+    column-gap: 0;
+  }
+
   .container .imgBox {
+    width: 50%;
+  }
+
+  .container .imgBox .left {
+    display: none;
+  }
+
+  .container .imgBox .logo {
+    height: 5%;
+    margin-left: 5%;
+  }
+
+  .formBx .form {
+    font-size: 1.5rem;
+    position: relative;
+    right: 4%;
+  }
+
+  .formBx .form form {
     width: 100%;
-    height: 100%;
-    position: absolute;
+  }
+
+  .form form .cmpnyName #org + small {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  /* .container .smLogo {
+    background-image: url(./images/Logo.svg);
+    height: 5%;
+    width: 5%;
+    background-size: cover;
+  } */
+
+  .container .imgBox {
+    display: none;
+  }
+
+  .formBx .form {
+    position: relative;
+    left: 0;
     right: 0;
-    top: 0;
-    left: 0;
-    object-fit: cover;
+    /* width: 120%; */
+    /* margin: 0 auto; */
   }
 
-  .formBx {
-    height: 80%;
-    top: 5%;
-  }
-  .formBx .form {
-    height: 90%;
-    width: 150%;
-    background: rgba(198, 193, 243, 0.76);
-    border: 3px solid transparent;
-    border-image: linear-gradient(to right, blue, red);
-    border-image-slice: 1;
-    padding: 20px;
-  }
-  .form form .cmpnyName #org + span::after {
-    right: 70%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .formBx {
-    height: 80%;
-  }
-  .formBx .form {
-    width: 120%;
-    /* top: %; */
-    left: -20%;
-    padding: 10px;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  .formBx .form {
-    width: 100%;
-    left: 0;
-    height: 90%;
+  .formBx .form form .pwd #toggle {
+    transform: translateY(50%);
   }
 }
