@@ -110,6 +110,8 @@
 
                 if (response.status === 201) {
                     alert("Your account has been registered! You will receive an email shortly");
+                } else {
+                    alert("Oops! Something went wrong");
                 }
             })
             .then (data => {
