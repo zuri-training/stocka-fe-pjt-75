@@ -142,13 +142,13 @@
   right: 0;
   width: 16px;
   height: 16px;
-  background: url(../images/eye.svg);
+  background: url(./assets/eye.svg);
   background-size: cover;
   cursor: pointer;
 }
 
 .formBx .form form .pwd #toggle.hide {
-  background: url(../images/eye-slash.svg);
+  background: url(./assets/eye-slash.svg);
   background-size: cover;
 }
 
