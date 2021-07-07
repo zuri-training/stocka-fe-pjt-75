@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer-library | Stocka</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://www.jsdelivr.com/package/npm/chart.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+</head>
+
+<body>
+    <div class="my-app">
+        <nav class="nav">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./assets/images/logo.png" alt="logo" />
+                </div>
+                <!-- inline-form -->
+                <form action="" class="form">
+                    <input type="text" placeholder="search" />
+                    <button> <img src="./assets/images/search.png" alt=""></button>
+                </form>
+                <div class="avatar-nav avatar">
+                    <img src="./assets/images/notify.png" alt="">
+                    <img src="./assets/images/img.png" alt="avatar" width="50px" />
+                </div>
+        </nav>
+        <div class="none burger" id="menu">
+            <img src="./assets/images/menu.png" alt="" width="30px" height="20px">
+        </div>
+        <div class="main-content container" id="container">
+            <div class="sidebar" id="sidebar">
+
+                <div class="avatar">
+                    <div class="image">
+                        <img src="./assets/images/img.png" alt="avatar" width="200px" />
+                    </div>
+                    <div class="description">
+                        <h3 class="user-name">Tyler Perry</h3>
+                        <p class="stack">Account Manager</p>
+                    </div>
+                </div>
+
+                <div class="list-group">
+                    <ul class="items">
+                        <li><a href="../admin/admin.html"> <span><img width="20px" src="./assets/images//home.png" alt="trophy" /></span>
+                                <span>Home</span></a></li>
+
+                        <li><a href="#"> <span><img width="20px" src="./assets/images/multiple-user.png"
+                                        alt="trophy" /></span> <span>Customers</span></a></li>
+                        <li><a href=""> <span><img width="20px" src="./assets/images/message.png" alt="trophy" /></span>
+                                <span>Messages</span></a></li>
+                        <li><a href=""> <span><img width="20px" src="./assets/images/product.png" alt="trophy" /></span>
+                                <span>Products</span></a></li>
+                        <li><a href="../customer-profile/customer-profile.html"> <span><img width="20px" src="./assets/images/profile.png" alt="trophy" /></span>
+                                <span>Profile</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="sign-out">
+                    <a href="../admin-login/admin-login.html"><span><img src="./assets/images/logout.png" alt="logout" /></span><span>Sign
+                            Out</span></a>
+                </div>
+
+            </div>
+            <div class="main">
+
+                    <div class="sales-history sales">
+                       
+                        <div class="top">
+                            <div class="left">
+                                <h1>Customers</h1>
+                                <button class="btn" id="new">Add new</button>
+                                <button class="btn" id="new">Import CSV</button>
+                                <button class="btn" id="new">Export</button>
+                            </div>
+                            <div class="right">
+                                <div class="filter">
+                                  <select name="filter" id="filter">
+                                    <option value="1">Filter Options</option>
+                                    <option value="1">Date of creation</option>
+                                    <option value="1">Inactive</option>
+                                    <option value="1">Verified</option>
+                                    <option value="1">Pending</option>
+                                </select> 
+                                <img src="./assets/images/dropdown.png" alt="">
+                                </div>
+                                
+                                <p class="currency">
+                                    <span>Currency - (</span><span><img src="./assets/images/naira-dark.png" alt=""></span>)
+                                    <span> Naira</span>
+                                </p>
+                                <img src="./assets/images/settings.png" alt="" class="settings">
+                            </div>
+                        </div>
+                        <div class="all">
+                            <p>All (1,344,513,435)</p>
+                            <div class="action filter">
+                                <select name="action" id="action">
+                                    <option value="1">Action</option>
+                                    <option value="1">Delete</option>
+                                    <option value="1">Edit</option>
+                                    <option value="1">Message</option>
+                                </select>
+                                <img src="./assets/images/dropdown.png" alt="">
+                            </div>
+                            <button class="btn" id="apply">Apply</button>
+                        </div>
+                        <div class="table sales-tables table-group">
+                            <table>
+                                <thead>
+
+                                    <tr>
+                                        <th><input type="checkbox" name="name" id="name"> <label for="name">Name </label> </th>
+                                        <th>Identification</th>
+                                        <th>Nationality</th>
+                                        <th>Activity</th>
+                                        <th>Profit</th>
+                                        <th>Loss</th>
+                                        <th>Net Earnings</th>
+                                    </tr>
+
+                                </thead>
+                                <tbody>
+                                    
+                                    <tr>
+                                        <td><input type="checkbox" name="name" id="item1"> <label for="item1">Zawadi Wawria </label> </td>
+                                        <td>Sto/223/ky</td>
+                                        <td>Kenya</td>
+                                        <td>Active</td>
+                                        <td>1,3000,000,000</td>
+                                        <td>49,525,555</td>
+                                        <td>1,250,498.45</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="name" id="item2"> <label for="item2">Zawadi Wawria </label> </td>
+                                        <td>Sto/223/ky</td>
+                                        <td>Kenya</td>
+                                        <td>Active</td>
+                                        <td>1,3000,000,000</td>
+                                        <td>49,525,555</td>
+                                        <td>1,250,498.45</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="name" id="item3"> <label for="item3">Zawadi Wawria </label> </td>
+                                        <td>Sto/223/ky</td>
+                                        <td>Kenya</td>
+                                        <td>Active</td>
+                                        <td>1,3000,000,000</td>
+                                        <td>49,525,555</td>
+                                        <td>1,250,498.45</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="name" id="item4"> <label for="item4">Zawadi Wawria </label> </td>
+                                        <td>Sto/223/ky</td>
+                                        <td>Kenya</td>
+                                        <td>Active</td>
+                                        <td>1,3000,000,000</td>
+                                        <td>49,525,555</td>
+                                        <td>1,250,498.45</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="name" id="item5"> <label for="item5">Zawadi Wawria </label> </td>
+                                        <td>Sto/223/ky</td>
+                                        <td>Kenya</td>
+                                        <td>Active</td>
+                                        <td>1,3000,000,000</td>
+                                        <td>49,525,555</td>
+                                        <td>1,250,498.45</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="name" id="item6"> <label for="item6">Zawadi Wawria </label> </td>
+                                        <td>Sto/223/ky</td>
+                                        <td>Kenya</td>
+                                        <td>Active</td>
+                                        <td>1,3000,000,000</td>
+                                        <td>49,525,555</td>
+                                        <td>1,250,498.45</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="name" id="item7"> <label for="item7">Zawadi Wawria </label> </td>
+                                        <td>Sto/223/ky</td>
+                                        <td>Kenya</td>
+                                        <td>Active</td>
+                                        <td>1,3000,000,000</td>
+                                        <td>49,525,555</td>
+                                        <td>1,250,498.45</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="name" id="item8"> <label for="item8">Zawadi Wawria </label> </td>
+                                        <td>Sto/223/ky</td>
+                                        <td>Kenya</td>
+                                        <td>Active</td>
+                                        <td>1,3000,000,000</td>
+                                        <td>49,525,555</td>
+                                        <td>1,250,498.45</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="name" id="item9"> <label for="item9">Zawadi Wawria </label> </td>
+                                        <td>Sto/223/ky</td>
+                                        <td>Kenya</td>
+                                        <td>Active</td>
+                                        <td>1,3000,000,000</td>
+                                        <td>49,525,555</td>
+                                        <td>1,250,498.45</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="name" id="item10"> <label for="item10">Zawadi Wawria </label> </td>
+                                        <td>Sto/223/ky</td>
+                                        <td>Kenya</td>
+                                        <td>Active</td>
+                                        <td>1,3000,000,000</td>
+                                        <td>49,525,555</td>
+                                        <td>1,250,498.45</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="name" id="item11"> <label for="item11">Zawadi Wawria </label> </td>
+                                        <td>Sto/223/ky</td>
+                                        <td>Kenya</td>
+                                        <td>Active</td>
+                                        <td>1,3000,000,000</td>
+                                        <td>49,525,555</td>
+                                        <td>1,250,498.45</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="name" id="item12"> <label for="item12">Zawadi Wawria </label> </td>
+                                        <td>Sto/223/ky</td>
+                                        <td>Kenya</td>
+                                        <td>Active</td>
+                                        <td>1,3000,000,000</td>
+                                        <td>49,525,555</td>
+                                        <td>1,250,498.45</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="name" id="item13"> <label for="item13">Zawadi Wawria </label> </td>
+                                        <td>Sto/223/ky</td>
+                                        <td>Kenya</td>
+                                        <td>Active</td>
+                                        <td>1,3000,000,000</td>
+                                        <td>49,525,555</td>
+                                        <td>1,250,498.45</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="name" id="item14"> <label for="item14">Zawadi Wawria </label> </td>
+                                        <td>Sto/223/ky</td>
+                                        <td>Kenya</td>
+                                        <td>Active</td>
+                                        <td>1,3000,000,000</td>
+                                        <td>49,525,555</td>
+                                        <td>1,250,498.45</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="name" id="item15"> <label for="item15">Zawadi Wawria </label> </td>
+                                        <td>Sto/223/ky</td>
+                                        <td>Kenya</td>
+                                        <td>Active</td>
+                                        <td>1,3000,000,000</td>
+                                        <td>49,525,555</td>
+                                        <td>1,250,498.45</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                </div>
+
+
+            </div>
+        </div>
+        <script src="./chart.js"></script> 
+        <script src="./app.js"></script>
+        <script src="./main.js"></script>
+        
+<script>
+
+</script>
+</body>
+
+</html>

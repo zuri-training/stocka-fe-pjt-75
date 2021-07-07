@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./login.css">
+    <script src="./script.js" defer></script>
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="bigBg">
+            
+        </div>
+        <div class="smallBg">
+            <div class="box signIn">
+                <div class="image">
+                    <img class="firstImg" src="./images/image.png" alt="decorative image">
+                    <a href="../index.html">
+                    <img class="logo" src="./images/Logo.svg" alt="logo">
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="formBx">
+            <a class="help" href="#">Need help?</a>
+            <div class="form">
+                <form action="" method="POST">
+        
+                    <div class="input emailBox">
+                        <label for="email" (required)>Email </label>
+                        <input type="email" name="email" id="email" placeholder="example@mail.com" required />
+                    </div>
+                    <div class="input passwdBox">
+                        <label for="pwd" (required)>Password </label>
+                        <input type="password" name="pwd" id="pwd" placeholder="Not more than 6 alphanumeric characters" required />
+                        <div id="toggle" onclick="showHide()"></div>
+                    </div>
+                    
+                    <div class="pageBtm">
+                        <a href="../user-dashboard/index.html">
+                            <button type="submit">
+                                LOGIN
+                            </button>
+                        </a>
+                        <span>
+                        <a href="../forgot-password/fgt-pwd.html" class="forgot">
+                             Forgot password?
+                        </a> |
+<!--                         <p>OR</p> -->
+                        <a href="../signup/index.html">Create account</a>
+                        </span>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

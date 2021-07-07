@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin | Stocka</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://www.jsdelivr.com/package/npm/chart.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="my-app">
+        <nav class="nav">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./assets/images/logo.png" alt="logo" />
+                </div>
+                <!-- inline-form -->
+                <form action="" class="form">
+                    <input type="text" placeholder="search" />
+                    <button> <img src="./assets/images/search.png" alt=""></button>
+                </form>
+                <div class="avatar">
+                    <img src="./assets/images/img.png" alt="avatar" width="50px" />
+                </div>
+        </nav>
+        <div class="none burger" id="hide">
+            <img src="./assets/images/menu.png" alt="" width="30px" height="20px">
+        </div>
+        <div class="main-content container" id="container">
+            <div class="sidebar" id="sidebar">
+                
+                <div class="avatar">
+                    <div class="image">
+                        <img src="./assets/images/img.png" alt="avatar" width="200px" />
+                    </div>
+                    <div class="description">
+                        <h3 class="user-name">John Afolabi</h3>
+                        <p class="stack">Account Manager</p>
+                    </div>
+                </div>
+
+                <div class="list-group">
+                    <ul class="items">
+                        <li><a href="#"> <span><img width="20px" src="./assets/images//home.png" alt="trophy" /></span>
+                                <span>Home</span></a></li>
+                        <li><a href="../customer-report/report.html"> <span><img width="20px" src="./assets/images/analysis.png"
+                                        alt="trophy" /></span> <span>Report</span></a></li>
+                        <li><a href="../customer - library/customer-library.html"> <span><img width="20px" src="./assets/images/multiple-user.png"
+                                        alt="trophy" /></span> <span>Customers</span></a></li>
+                        <li><a href="../customer-profile/customer-profile.html"> <span><img width="20px" src="./assets/images/message.png" alt="trophy" /></span>
+                                <span>Customer profile</span></a></li>
+                        <li><a href=""> <span><img width="20px" src="./assets/images/product.png" alt="trophy" /></span>
+                                <span>Products</span></a></li>
+                        <li><a href=""> <span><img width="20px" src="./assets/images/profile.png" alt="trophy" /></span>
+                                <span>Profile</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="sign-out">
+                    <a href="../admin-login/admin-login.html"><span><img src="./assets/images/logout.png" alt="logout" /></span><span>Sign
+                            Out</span></a>
+                </div>
+
+            </div>
+            <div class="main">
+                <div class="top">
+                    <div class="overview">
+                        <h1 class="text-overview">Overview</h1>
+                    </div>
+                    <div class="date">
+                        <!-- <p class="text text-gray">May, 11, 2021 - June, 11, 2021</p> -->
+                        <select name="" id="select">
+                            <option value="1">May, 11, 2021 - June, 11, 2021</option>
+                            <option value="2">June, 11, 2021 - July, 11, 2021</option>
+                            <option value="3">July, 11, 2021 - August, 11, 2021</option>
+                            <option value="4">August, 11, 2021 - September, 11, 2021</option>
+                            <option value="4">September, 11, 2021 - October, 11, 2021</option>
+                            <option value="4">October, 11, 2021 - November, 11, 2021</option>
+                            <option value="4">November, 11, 2021 - December, 11, 2021</option>
+                        </select>
+                        <img id="drop date" src="./assets/images/dropdown.png" alt="" class="dropdown" />
+                    </div>
+                </div>
+                <!-- dynamic values. Fetch data from a source -->
+                <div class="dispense w-100">
+                    <div class="product flex-col">
+                        <h2>Product</h2>
+                        <p>542,370</p>
+                    </div>
+                    <div class="report flex-col">
+                        <h2>Reports</h2>
+                        <p>1,370</p>
+                    </div>
+
+                </div>
+                <div class="users">
+                    <h3>Users</h3>
+                    <div class="user-activity">
+                        <div class="user type-2">
+                            <div class="gauge">
+                                <canvas id="user2" width="250" height="100"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="charts">
+                    <!-- charts goes here -->
+                    <!-- Charts Area -->
+                    <div class="left">
+                        <div class="my-profit">
+                            <div class="profit">
+                                <h2 class="profit-cta p-10">Profit</h2>
+
+                                <div class="earning p-10">
+                                    <h1><span><img src="./assets/images/naira.png" alt=""></span><span>566,950.45</span>
+                                    </h1>
+                                    <h3>Current month earnings</h3>
+                                </div>
+                                <div class="new-customers p-10">
+                                    <h1>78</h1>
+                                    <h2>New Customers</h2>
+                                </div>
+                            </div>
+                            <div class="chart">
+                                <div class="total-revenue">
+                                    <h1>
+                                        <span class="mute grey">Total Revenue</span>
+                                        <span class="value">60%</span>
+                                    </h1>
+                                </div>
+                                <canvas id="chart2" width="300" height="50"></canvas>
+                            </div>
+                        </div>
+
+                        <div class="chart">
+                            <canvas id="myChart" width="100" height="50"></canvas>
+                        </div>
+                    </div>
+                    <div class="right"></div>
+                </div>
+                <div class="commodity">
+                    <div class="p1 product">
+                        <img src="./assets/images/trophy.png" alt="trophy">
+                        <div class="left">
+                            <h2>Groceries</h2>
+                            <p> <span> <img width="20px" src="./assets/images/naira.png"
+                                        alt="naira"></span><span>201,570</span></p>
+                        </div>
+                    </div>
+                    <div class="p2 product">
+                        <img src="./assets/images/perishable.png" alt="">
+                        <div class="left">
+                            <h2>Perishable</h2>
+                            <p> <span> <img width="20px" src="./assets/images/naira.png"
+                                        alt="naira"></span><span>132,390</span></p>
+                        </div>
+                    </div>
+                    <div class="p3 product">
+                        <img src="./assets/images/agriculture.png" alt="">
+                        <div class="left">
+                            <h2>Agricultural</h2>
+                            <p> <span> <img width="20px" src="./assets/images/naira.png"
+                                        alt="naira"></span><span>82,170</span></p>
+                        </div>
+                    </div>
+                    <div class="p4 product">
+                        <img src="./assets/images/services.png" alt="">
+                        <div class="left">
+                            <h2>Services</h2>
+                            <p> <span> <img width="20px" src="./assets/images/naira.png"
+                                        alt="naira"></span><span>150,820</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="last-section">
+                    <div class="history notify">
+                        <div class="header">
+                            <h1 class="cta">History</h1>
+                            <h3>User accounts added</h3>
+                        </div>
+                        <div class="history-body body">
+                            <div class="accounts">
+                                <div class="acc1 account">
+                                    <img src="./assets/images/his1.png" alt="">
+                                    <div class="credential">
+                                        <h1 class="name">Jonny Max</h1>
+                                        <h3 class="id">ID: Sto/223/Ng</h3>
+                                    </div>
+                                    <div class="date-time">
+                                        <h3>
+                                            <span class="date">6/12/2021</span>
+                                            <span class="time">10:43pm</span>
+                                        </h3>
+                                    </div>
+                                    <h3 class="status">completed</h3>
+                                </div>
+
+                                <div class="acc2 account">
+                                    <img src="./assets/images/his2.png" alt="">
+                                    <div class="credential">
+                                        <h1 class="name">Lily Tiger</h1>
+                                        <h3 class="id">ID: Sto/79/Ng</h3>
+                                    </div>
+                                    <div class="date-time">
+                                        <h3>
+                                            <span class="date">5/12/2021</span>
+                                            <span class="time">10:00pm</span>
+                                        </h3>
+                                    </div>
+                                    <h3 class="status">completed</h3>
+                                </div>
+
+                                <div class="acc3 account">
+                                    <img src="./assets/images/his3.png" alt="">
+                                    <div class="credential">
+                                        <h1 class="name">Dora Black</h1>
+                                        <h3 class="id">ID: Sto/128/Ng</h3>
+                                    </div>
+                                    <div class="date-time">
+                                        <h3>
+                                            <span class="date">5/12/2021</span>
+                                            <span class="time">09:43pm</span>
+                                        </h3>
+                                    </div>
+                                    <h3 class="status">completed</h3>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gross notify">
+                        <div class="header">
+                            <h1 class="cta">Top Gross earners</h1>
+                            <h3>Best Sellers</h3>
+                        </div>
+                        <div class="history-body body">
+                            <div class="accounts">
+                                <div class="acc1 account">
+                                    <img src="./assets/images/gross1.png" alt="">
+                                    <div class="credential">
+                                        <h1 class="name">Zawadi</h1>
+                                        <h3 class="id">ID: Sto/223/KY</h3>
+                                    </div>
+                                    <div class="date-time">
+                                        <h3>
+                                            <span> <img width="20px" src="./assets/images/naira.png"
+                                                    alt="naira"></span><span>1,250,485</span>
+                                        </h3>
+                                    </div>
+                                    <div class="status">
+                                        <img src="./assets/images/polygon.png" alt="">
+                                        <span class="percent">+28.87%</span>
+                                    </div>
+                                </div>
+
+                                <div class="acc2 account">
+                                    <img src="./assets/images/gross2.png" alt="">
+                                    <div class="credential">
+                                        <h1 class="name">Ellad Kojo</h1>
+                                        <h3 class="id">ID: Sto/223/GH</h3>
+                                    </div>
+                                    <div class="date-time">
+                                        <h3>
+                                            <span> <img width="20px" src="./assets/images/naira.png"
+                                                    alt="naira"></span><span>1,121,600</span>
+                                        </h3>
+                                    </div>
+                                    <div class="status">
+                                        <img src="./assets/images/polygon.png" alt="">
+                                        <span class="percent">+21.87%</span>
+                                    </div>
+                                </div>
+
+                                <div class="acc1 account">
+                                    <img src="./assets/images/gross3.png" alt="">
+                                    <div class="credential">
+                                        <h1 class="name">Tobi Ojo</h1>
+                                        <h3 class="id">ID: Sto/16/Ng</h3>
+                                    </div>
+                                    <div class="date-time">
+                                        <h3>
+                                            <img width="20px" src="./assets/images/naira.png"
+                                                alt="naira"><span>1,114,916</span>
+                                        </h3>
+                                    </div>
+                                    <div class="status">
+                                        <img src="./assets/images/polygon.png" alt="">
+                                        <span class="percent">+18.87%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    </div>
+
+    <script src="./chart.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
