@@ -18,7 +18,7 @@
   display: flex;
   justify-content: start;
   position: relative;
-  right: 2.8%;
+  right: 3%;
   overflow: hidden;
 }
 
@@ -266,7 +266,8 @@ form .pageBtm .check span input:checked::before {
   .formBx .form {
     position: relative;
     left: 0;
-    right: 3%;
+    right: 5%;
+    font-size: 1.2rem;
   }
 
   .formBx .form form .pwd #toggle {
