@@ -6,66 +6,153 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin | Stocka</title>
     <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <!-- <script src="https://www.jsdelivr.com/package/npm/chart.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,300;1,400&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/dashboard-template.css" />
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="./script/dashboard-template.js" defer></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script> -->
 </head>
 
 <body>
-    <div class="my-app">
-        <nav class="nav">
-            <div class="navbar">
-                <div class="logo">
-                    <img src="./assets/images/logo.png" alt="logo" />
-                </div>
-                <!-- inline-form -->
-                <form action="" class="form">
-                    <input type="text" placeholder="search" />
-                    <button> <img src="./assets/images/search.png" alt=""></button>
-                </form>
-                <div class="avatar">
-                    <img src="./assets/images/img.png" alt="avatar" width="50px" />
-                </div>
-        </nav>
-        <div class="none burger" id="hide">
-            <img src="./assets/images/menu.png" alt="" width="30px" height="20px">
+    <nav class="main-navbar">
+        <div class="nav-logo">
+            <img src="./assets/images/Logo.png" class="logo-img" />
         </div>
-        <div class="main-content container" id="container">
-            <div class="sidebar" id="sidebar">
-                
-                <div class="avatar">
-                    <div class="image">
-                        <img src="./assets/images/img.png" alt="avatar" width="200px" />
-                    </div>
-                    <div class="description">
-                        <h3 class="user-name">John Afolabi</h3>
-                        <p class="stack">Account Manager</p>
-                    </div>
-                </div>
-
-                <div class="list-group">
-                    <ul class="items">
-                        <li><a href=""> <span><img width="20px" src="./assets/images//home.png" alt="trophy" /></span>
-                                <span>Home</span></a></li>
-                        <li><a href=""> <span><img width="20px" src="./assets/images/analysis.png"
-                                        alt="trophy" /></span> <span>Analytics</span></a></li>
-                        <li><a href=""> <span><img width="20px" src="./assets/images/multiple-user.png"
-                                        alt="trophy" /></span> <span>Customers</span></a></li>
-                        <li><a href=""> <span><img width="20px" src="./assets/images/message.png" alt="trophy" /></span>
-                                <span>Customer profile</span></a></li>
-                        <li><a href=""> <span><img width="20px" src="./assets/images/product.png" alt="trophy" /></span>
-                                <span>Products</span></a></li>
-                        <li><a href=""> <span><img width="20px" src="./assets/images/profile.png" alt="trophy" /></span>
-                                <span>Profile</span></a></li>
-                    </ul>
-                </div>
-
-                <div class="sign-out">
-                    <a href=""><span><img src="./assets/images/logout.png" alt="logout" /></span><span>Sign
-                            Out</span></a>
-                </div>
-
+        <div class="main-nav">
+            <div id="notifications-btn " class="profile-md nav-btn">
+                <i class="fas fa-bell bell"></i>
+                <span class="badge">2</span>
             </div>
+            <div class="nav-img">
+                <img src="./assets/images/Ellipse 6.png" class="nav-avatar" />
+            </div>
+        </div>
+
+    </nav>
+    <div class="dashboard-wrapper">
+        <div class="harmburger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="side-pane">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <a href="../user-dashboard/index.html" id="dashboard">
+                        <span class="icon"><i class="fas fa-chess-board"></i></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="./category.html" id="profile">
+                        <span class="icon"><i class="far fa-user-circle"></i></span>
+                        <span class="title">Profile</span>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#Profile" id="stores">
+                        <span class="icon"><i class="fas fa-store"></i></span>
+                        <span class="title">Stores</span>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="../product-page/index.html" id="product">
+                        <span class="icon"><i class="fas fa-columns"></i></span>
+                        <span class="title">Products</span>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#" id="report">
+                        <span class="icon"><i class="fas fa-chart-line"></i></span>
+                        <span class="title">Report</span>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#Settings" id="settings">
+                        <span class="icon"><i class="fas fa-cog"></i></span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="../login/login.html" id="signout">
+                        <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+                        <span class="title">Sign out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="dashboard-main" id="main">
+
+            <!-- Notfications Wrapper -->
+            <div class="modal-wrapper">
+                <div class="modal-pop-up">
+                    <div class="section-one">
+                        <p>NOTIFICATIONS</p>
+                        <div class="close-notifications">
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                    <div class="prize-alert">
+                        <h4>Price Alert</h4>
+
+                        <small>The price of sugar has increased by 64% in the last
+                            24hours</small>
+                        <div class="open-chart">
+                            <small>+362, 214</small>
+                            <button>
+                                <a href="#chart">Open Chart</a>
+                            </button>
+                        </div>
+                        <small>3 hours ago</small>
+                    </div>
+                    <div class="stock-alert">
+                        <h4>Stock Alert</h4>
+
+                        <small> Your yam stock is low. You are adised to restock </small>
+                        <div class="see-products">
+                            <small>0.824kg left in stock</small>
+                            <button>
+                                <a href="#chart">See products</a>
+                            </button>
+                        </div>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Profile  -->
+            <div class="modal-wrapper-profile">
+                <div class="modal-pop-up">
+                    <div class="profile">
+                        <p>Profile</p>
+
+                        <div class="close-notifications" id="close">
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                    <div class="profile-img">
+                        <img src="./images/Ellipse 6.png" class="profile-avatar" />
+                        <h4 class="profile-name">Tyler Perry</h4>
+                    </div>
+                    <div class="btn-edit">
+                        <button class="edit-btn">Edit profile</button>
+                    </div>
+
+                    <li class="sign-out">
+                        <a> <i class="fas fa-sign-out-alt"></i> Sign out </a>
+                    </li>
+                </div>
+            </div>
+
+            <!-- main stuff for me -->
             <div class="main">
                 <div class="top">
                     <div class="overview">
@@ -101,8 +188,8 @@
                     <h3>Users</h3>
                     <div class="user-activity">
                         <div class="user type-2">
-                            <div class="gauge">
-                                <canvas id="user2" width="250" height="100"></canvas>
+                            <div class="gauge" id="users">
+                                <!-- <canvas id="users" width="250" height="100"></canvas> -->
                             </div>
                         </div>
                     </div>
@@ -117,13 +204,13 @@
                                 <h2 class="profit-cta p-10">Profit</h2>
 
                                 <div class="earning p-10">
-                                    <h1><span><img src="./assets/images/naira.png" alt=""></span><span>566,950.45</span>
-                                    </h1>
-                                    <h3>Current month earnings</h3>
+                                    <h2><span><img src="./assets/images/naira.png" alt="naira" width="30px"></span><span>566,950.45</span>
+                                    </h2>
+                                    <h4>Current month earnings</h4>
                                 </div>
                                 <div class="new-customers p-10">
-                                    <h1>78</h1>
-                                    <h2>New Customers</h2>
+                                    <h2>78</h1>
+                                    <h3>New Customers</h3>
                                 </div>
                             </div>
                             <div class="chart">
@@ -133,12 +220,12 @@
                                         <span class="value">60%</span>
                                     </h1>
                                 </div>
-                                <canvas id="chart2" width="300" height="50"></canvas>
+                               <div class="chart-revenue" id="revenue"></div>
                             </div>
                         </div>
 
                         <div class="chart">
-                            <canvas id="myChart" width="100" height="50"></canvas>
+                            <!-- <canvas id="myChart" width="100" height="50"></canvas> -->
                         </div>
                     </div>
                     <div class="right"></div>
@@ -147,87 +234,101 @@
                     <div class="p1 product">
                         <img src="./assets/images/trophy.png" alt="trophy">
                         <div class="left">
-                            <h2>Groceries</h2>
-                            <p> <span> <img width="20px" src="./assets/images/naira.png"
-                                        alt="naira"></span><span>201,570</span></p>
+                            <h3>Groceries</h3>
+                            <h4> <span> <img width="15px" src="./assets/images/naira.png"
+                                        alt="naira"></span><span>201,570</span></h4>
                         </div>
                     </div>
                     <div class="p2 product">
                         <img src="./assets/images/perishable.png" alt="">
                         <div class="left">
-                            <h2>Perishable</h2>
-                            <p> <span> <img width="20px" src="./assets/images/naira.png"
-                                        alt="naira"></span><span>132,390</span></p>
+                            <h3>Perishable</h3>
+                            <h4> <span> <img width="15px" src="./assets/images/naira.png"
+                                        alt="naira"></span><span>201,570</span></h4>
                         </div>
                     </div>
                     <div class="p3 product">
                         <img src="./assets/images/agriculture.png" alt="">
                         <div class="left">
-                            <h2>Agricultural</h2>
-                            <p> <span> <img width="20px" src="./assets/images/naira.png"
-                                        alt="naira"></span><span>82,170</span></p>
+                            <h3>Agriculture</h3>
+                            <h4> <span> <img width="15px" src="./assets/images/naira.png"
+                                        alt="naira"></span><span>201,570</span></h4>
                         </div>
                     </div>
                     <div class="p4 product">
                         <img src="./assets/images/services.png" alt="">
                         <div class="left">
-                            <h2>Services</h2>
-                            <p> <span> <img width="20px" src="./assets/images/naira.png"
-                                        alt="naira"></span><span>150,820</span></p>
+                            <h3>Services</h3>
+                            <h4> <span> <img width="15px" src="./assets/images/naira.png"
+                                        alt="naira"></span><span>201,570</span></h4>
                         </div>
                     </div>
                 </div>
-                <div class="last-section">
+
+                <div class="last-section flex">
                     <div class="history notify">
                         <div class="header">
-                            <h1 class="cta">History</h1>
-                            <h3>User accounts added</h3>
+                            <h3 class="cta">History</h3>
+                            <h5>User accounts added</h5>
                         </div>
                         <div class="history-body body">
                             <div class="accounts">
                                 <div class="acc1 account">
-                                    <img src="./assets/images/his1.png" alt="">
-                                    <div class="credential">
-                                        <h1 class="name">Jonny Max</h1>
-                                        <h3 class="id">ID: Sto/223/Ng</h3>
-                                    </div>
-                                    <div class="date-time">
-                                        <h3>
-                                            <span class="date">6/12/2021</span>
-                                            <span class="time">10:43pm</span>
-                                        </h3>
-                                    </div>
-                                    <h3 class="status">completed</h3>
+                                    <div class="new-user flex">
+                                        <img src="./assets/images/his1.png" alt="" width="40px">
+                                   <div class="credential">
+                                       <h4 class="name">Dora Black</h4>
+                                       <h5 class="id">ID: Sto/128/Ng</h5>
+                                   </div>
+                                   </div>
+                                  <div class="new-status flex">
+                                      <div class="date-time">
+                                       <h5>
+                                           <span class="date">5/12/2021</span>
+                                           <span class="time">09:43pm</span>
+                                       </h5>
+                                   </div>
+                                   <h5 class="status">completed</h5>
+                                  </div>
                                 </div>
 
                                 <div class="acc2 account">
-                                    <img src="./assets/images/his2.png" alt="">
-                                    <div class="credential">
-                                        <h1 class="name">Lily Tiger</h1>
-                                        <h3 class="id">ID: Sto/79/Ng</h3>
-                                    </div>
-                                    <div class="date-time">
-                                        <h3>
-                                            <span class="date">5/12/2021</span>
-                                            <span class="time">10:00pm</span>
-                                        </h3>
-                                    </div>
-                                    <h3 class="status">completed</h3>
+                                    <div class="new-user flex">
+                                        <img src="./assets/images/his2.png" alt="" width="40px">
+                                   <div class="credential">
+                                       <h4 class="name">Dora Black</h4>
+                                       <h5 class="id">ID: Sto/128/Ng</h5>
+                                   </div>
+                                   </div>
+                                  <div class="new-status flex">
+                                      <div class="date-time">
+                                       <h5>
+                                           <span class="date">5/12/2021</span>
+                                           <span class="time">09:43pm</span>
+                                       </h5>
+                                   </div>
+                                   <h5 class="status">completed</h5>
+                                  </div>
                                 </div>
 
                                 <div class="acc3 account">
-                                    <img src="./assets/images/his3.png" alt="">
+                                    <div class="new-user flex">
+                                         <img src="./assets/images/his3.png" alt="" width="40px">
                                     <div class="credential">
-                                        <h1 class="name">Dora Black</h1>
-                                        <h3 class="id">ID: Sto/128/Ng</h3>
+                                        <h4 class="name">Dora Black</h4>
+                                        <h5 class="id">ID: Sto/128/Ng</h5>
                                     </div>
-                                    <div class="date-time">
-                                        <h3>
+                                    </div>
+                                   <div class="new-status flex">
+                                       <div class="date-time">
+                                        <h5>
                                             <span class="date">5/12/2021</span>
                                             <span class="time">09:43pm</span>
-                                        </h3>
+                                        </h5>
                                     </div>
-                                    <h3 class="status">completed</h3>
+                                    <h5 class="status">completed</h5>
+                                   </div>
+                                    
                                 </div>
 
                             </div>
@@ -235,77 +336,117 @@
                     </div>
                     <div class="gross notify">
                         <div class="header">
-                            <h1 class="cta">Top Gross earners</h1>
-                            <h3>Best Sellers</h3>
+                            <h3 class="cta">Top Gross earners</h3>
+                            <h5>Best Sellers</h5>
                         </div>
                         <div class="history-body body">
                             <div class="accounts">
                                 <div class="acc1 account">
-                                    <img src="./assets/images/gross1.png" alt="">
-                                    <div class="credential">
-                                        <h1 class="name">Zawadi</h1>
-                                        <h3 class="id">ID: Sto/223/KY</h3>
+                                    <div class="user flex">
+                                        <img src="./assets/images/gross1.png" alt="" width="40px">
+                                        <div class="credential">
+                                            <h4 class="name">Tobi Ojo</h4>
+                                            <h5 class="id">ID: Sto/16/Ng</h5>
+                                        </div>
                                     </div>
-                                    <div class="date-time">
-                                        <h3>
-                                            <span> <img width="20px" src="./assets/images/naira.png"
-                                                    alt="naira"></span><span>1,250,485</span>
-                                        </h3>
-                                    </div>
-                                    <div class="status">
-                                        <img src="./assets/images/polygon.png" alt="">
-                                        <span class="percent">+28.87%</span>
-                                    </div>
-                                </div>
 
-                                <div class="acc2 account">
-                                    <img src="./assets/images/gross2.png" alt="">
-                                    <div class="credential">
-                                        <h1 class="name">Ellad Kojo</h1>
-                                        <h3 class="id">ID: Sto/223/GH</h3>
-                                    </div>
-                                    <div class="date-time">
+                                    <div class="amount flex">
+                                      <div class="date-time">
                                         <h3>
-                                            <span> <img width="20px" src="./assets/images/naira.png"
-                                                    alt="naira"></span><span>1,121,600</span>
-                                        </h3>
-                                    </div>
-                                    <div class="status">
-                                        <img src="./assets/images/polygon.png" alt="">
-                                        <span class="percent">+21.87%</span>
-                                    </div>
-                                </div>
-
-                                <div class="acc1 account">
-                                    <img src="./assets/images/gross3.png" alt="">
-                                    <div class="credential">
-                                        <h1 class="name">Tobi Ojo</h1>
-                                        <h3 class="id">ID: Sto/16/Ng</h3>
-                                    </div>
-                                    <div class="date-time">
-                                        <h3>
-                                            <img width="20px" src="./assets/images/naira.png"
+                                            <img width="15px" src="./assets/images/naira.png"
                                                 alt="naira"><span>1,114,916</span>
                                         </h3>
                                     </div>
                                     <div class="status">
-                                        <img src="./assets/images/polygon.png" alt="">
+                                        <img src="./assets/images/polygon.png" alt="" width="25px">
                                         <span class="percent">+18.87%</span>
+                                    </div>  
                                     </div>
+                                </div>
+
+                                <div class="acc2 account">
+                                    <div class="user flex">
+                                        <img src="./assets/images/gross2.png" alt="" width="40px">
+                                        <div class="credential">
+                                            <h4 class="name">Tobi Ojo</h4>
+                                            <h5 class="id">ID: Sto/16/Ng</h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="amount flex">
+                                      <div class="date-time">
+                                        <h3>
+                                            <img width="15px" src="./assets/images/naira.png"
+                                                alt="naira"><span>1,114,916</span>
+                                        </h3>
+                                    </div>
+                                    <div class="status">
+                                        <img src="./assets/images/polygon.png" alt="" width="25px">
+                                        <span class="percent">+18.87%</span>
+                                    </div>  
+                                    </div>
+                                </div>
+
+                                <div class="acc3 account">
+                                    <div class="user flex">
+                                        <img src="./assets/images/gross3.png" alt="" width="40px">
+                                        <div class="credential">
+                                            <h4 class="name">Tobi Ojo</h4>
+                                            <h5 class="id">ID: Sto/16/Ng</h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="amount flex">
+                                      <div class="date-time">
+                                        <h3>
+                                            <img width="15px" src="./assets/images/naira.png"
+                                                alt="naira"><span>1,114,916</span>
+                                        </h3>
+                                    </div>
+                                    <div class="status">
+                                        <img src="./assets/images/polygon.png" alt="" width="25px">
+                                        <span class="percent">+18.87%</span>
+                                    </div>  
+                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
-
-
-    </div>
     </div>
 
-    <script src="./chart.js"></script>
-    <script src="./app.js"></script>
+    </div>
+
+    <!-- <script src="./chart.js"></script>
+    <script src="./app.js"></script> -->
+    <script src="./script/apex-script.js"></script>
+    <script>
+        const list = document.getElementsByClassName('.list-group-item');
+        const list_item = [
+            "#dashboard",
+            "#profile",
+            "#stores",
+            "#product",
+            "#report",
+            "#settings",
+            "#signout",
+        ];
+
+        for (i in list_item) {
+            let str = list_item[i].replace('#', '');
+            str == 'signout' ? 'sign out' : str;
+            tippy(list_item[i], {
+                content: str,
+                //   followCursor: true,
+                theme: 'dark',
+            });
+        }
+    // tippy.animation({delay: 5})
+    </script>
 </body>
 
 </html>
