@@ -1,4 +1,6 @@
 const menu = document.querySelector('.harmburger-menu');
+const main = document.querySelector('.main');
+
 const sideNav = document.querySelector('.side-pane')
     menu.addEventListener('click', () => {
         sideNav.classList.toggle('active')
@@ -7,10 +9,10 @@ const sideNav = document.querySelector('.side-pane')
 
 
     //sticky navbar
-    window.addEventListener('scroll', () => {
-        const navbar = document.querySelector('nav');
-        navbar.classList.toggle('sticky', window.scrollY > 0)
-    })
+    // window.addEventListener('scroll', () => {
+    //     const navbar = document.querySelector('nav');
+    //     navbar.classList.toggle('sticky', window.scrollY > 0)
+    // })
 
     //Modal wrapper
     const closeBtn = document.querySelector('.close-notifications');
