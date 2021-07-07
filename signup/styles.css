@@ -116,6 +116,7 @@
 .form form .cmpnyName #org:invalid + small::after {
   content: "Input field is empty";
   color: red;
+  font-size: 0.9rem;
 }
 
 .formBx .form form a,
@@ -264,9 +265,9 @@ form .pageBtm .check span input:checked::before {
     width: 100%;
   }
 
-  .form form .cmpnyName #org + small {
+/*   .form form .cmpnyName #org + small {
     font-size: 1rem;
-  }
+  } */
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
@@ -291,5 +292,9 @@ form .pageBtm .check span input:checked::before {
 
   .formBx .form form .pwd #toggle {
     transform: translateY(50%);
+  }
+  
+  .formBx .form form .btmPara {
+    font-size: 0.6rem;
   }
 }
