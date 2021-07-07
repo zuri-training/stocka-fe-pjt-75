@@ -30,20 +30,6 @@
   z-index: 1;
 }
 
-/* .container .imgBox .left {
-  position: relative;
-  width: 20%;
-  height: 50%;
-  left: 0;
-} */
-
-/* .container .imgBox .right {
-  position: relative;
-  width: 80%;
-  height: 98%;
-  padding: 1% 0 1% 2%;
-} */
-
 .formBx .form {
   width: 100%;
   height: 70%;
@@ -102,6 +88,7 @@
   position: relative;
   display: inline-block;
   width: 100%;
+  font-size: 0.8rem;
 }
 
 .form form .cmpnyName #org + small::after {
@@ -265,18 +252,12 @@ form .pageBtm .check span input:checked::before {
     width: 100%;
   }
 
-/*   .form form .cmpnyName #org + small {
+  .form form .cmpnyName #org + small {
     font-size: 1rem;
-  } */
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
-  /* .container .smLogo {
-    background-image: url(./images/Logo.svg);
-    height: 5%;
-    width: 5%;
-    background-size: cover;
-  } */
 
   .container .imgBox {
     display: none;
@@ -286,8 +267,6 @@ form .pageBtm .check span input:checked::before {
     position: relative;
     left: 0;
     right: 0;
-    /* width: 120%; */
-    /* margin: 0 auto; */
   }
 
   .formBx .form form .pwd #toggle {
