@@ -88,12 +88,12 @@
   position: relative;
   display: inline-block;
   width: 100%;
-  font-size: 0.8rem;
 }
 
 .form form .cmpnyName #org + small::after {
   position: absolute;
   top: -25px;
+  font-size: 0.8rem;
 }
 
 .form form .cmpnyName #org:invalid {
@@ -103,7 +103,6 @@
 .form form .cmpnyName #org:invalid + small::after {
   content: "Input field is empty";
   color: red;
-  font-size: 0.9rem;
 }
 
 .formBx .form form a,
@@ -117,7 +116,7 @@
 }
 
 .formBx .form form a:visited {
-  color: #08378c;
+  color: #093e9c;
 }
 
 .formBx .form form .pwd {
@@ -255,26 +254,55 @@ form .pageBtm .check span input:checked::before {
   .form form .cmpnyName #org + small {
     font-size: 1rem;
   }
+  
+  .formBx .form form .pwd #toggle {
+    transform: translateY(45%);
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
 
+  * {
+    margin: unset;
+  }
+  
+  .container {
+    width: 83%;
+    justify-content: unset;
+  }
+  
   .container .imgBox {
     display: none;
   }
 
   .formBx .form {
+    height: 60%;
     position: relative;
     left: 0;
-    right: 5%;
+    right: 0;
     font-size: 1.2rem;
   }
-
-  .formBx .form form .pwd #toggle {
-    transform: translateY(50%);
+  
+  .formBx .form h2 {
+    margin-top: 5%;
+    font-size: 1.4em;
   }
   
   .formBx .form form .btmPara {
     font-size: 0.6rem;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .formBx .form h2 {
+    margin-top: 10%;
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (min-width: 636px) and (max-width: 768px) {
+  .container {
+    width: 78%;
+    margin: auto;
   }
 }
