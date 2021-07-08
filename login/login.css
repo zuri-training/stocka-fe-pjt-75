@@ -81,6 +81,7 @@ body {
   position: relative;
   left: 75%;
   top: 5%;
+  color: #093e9c;
 }
 
 .container .formBx > a,
@@ -88,6 +89,7 @@ body {
   text-decoration: none;
   color: #093e9c;
   outline: none;
+
 }
 
 .formBx .form {
@@ -145,13 +147,13 @@ body {
   right: -7%;
   width: 16px;
   height: 16px;
-  background: url(../images/eye.svg);
+  background: url(./images/eye.svg);
   background-size: cover;
   cursor: pointer;
 }
 
 .formBx .form form .passwdBox #toggle.hide {
-  background: url(../images/eye-slash.svg);
+  background: url(./images/eye-slash.svg);
   background-size: cover;
 }
 
