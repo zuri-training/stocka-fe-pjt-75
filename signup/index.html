@@ -119,10 +119,10 @@
             .then (data => {
                 console.log(data);
             })
-            .catch (error => {
+            .catch (error => 
 //                 console.error(error);
-                alert(error.message);
-            });
+                reject(error.message)
+            );
         });
 
     </script>
