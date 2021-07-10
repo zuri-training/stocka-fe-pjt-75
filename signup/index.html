@@ -112,9 +112,9 @@
                 if (response.ok) {
                     alert("Your account has been registered! You will receive an email shortly")
                 } else {
-                    return response.json()
-                    .then(response => {throw new Error(response.error)})
+                    return response.json().then(response => {throw new Error(response.error)})
 //                     alert("Oops! Something went wrong");
+                }
             })
             .then (data => {
                 console.log(data);
