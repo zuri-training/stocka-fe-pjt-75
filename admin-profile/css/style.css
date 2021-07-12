@@ -1,0 +1,114 @@
+@import url(dashboard-template.css);
+.dashboard-main {
+    background: #fff;
+}
+input,
+select {
+  border: 1px solid rgb(104, 98, 98);
+  outline-style: none;
+  padding: 2px 4px;
+  height: 30px;
+  font-size: large;
+  background: #fff;
+  display: block;
+  border-radius: 3px;
+}
+.br-5 {
+    border-right: 5px inset var(--darkblue);
+}
+.center {
+  text-align: center;
+}
+.w-100 {
+  width: 100%;
+}
+.w-50 {
+  width: 50%;
+}
+select {
+  appearance: none;
+  /* width: 100%; */
+}
+
+.body {
+  /* border: 1px solid; */
+  padding: 10px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.i-block {
+  display: inline-block;
+  margin: 5px 0;
+}
+.form-group {
+    margin: 10px 0;
+}
+[type="date"] {
+  background: #fff url(../images/dropdown.png) 97% 50% no-repeat;
+}
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.avatar {
+  display: inline-block;
+  /* z-index: ; */
+}
+
+.avatar .absolute {
+  bottom: 10px;
+  right: 20px;
+}
+
+.drop .absolute {
+  /* top: 3px; */
+  bottom: 7px;
+  right: 7px;
+  pointer-events: none;
+}
+
+.btn-group {
+    margin-top: 10px;
+    text-align: right;
+}
+.btn {
+    outline-style: none;
+    border: 0px;
+    background: var(--darkblue);
+  padding: 10px 20px;
+  color: #fff;
+    font-size: larger;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 770px) {
+  .body {
+    flex-direction: column;
+  }
+  .drop .absolute {
+    right: 20px;
+  }
+
+}
+@media screen and (max-width: 500px) {
+    .flex {
+      flex-direction: column;
+    }
+  
+  }

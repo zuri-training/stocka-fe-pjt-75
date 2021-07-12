@@ -19,7 +19,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/dashboard-template.css" />
-
+    <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -55,13 +55,12 @@
           <img src="./images/Ellipse 6.png" class="nav-avatar" />
         </div>
       </div>
-     
     </nav>
     <div class="dashboard-wrapper">
-        <div class="harmburger-menu">
-            <i class="fas fa-bars"></i>
-            <!-- <span>MENU</span> -->
-          </div>
+      <div class="harmburger-menu">
+        <i class="fas fa-bars"></i>
+        <!-- <span>MENU</span> -->
+      </div>
       <div class="side-pane">
         <ul class="list-group">
           <li class="list-group-item">
@@ -110,58 +109,78 @@
       </div>
 
       <div class="dashboard-main" id="main">
-        <h2 class="center">My Profile</h2>
-        <div class="avatar">
-          <img src="./images/avatar.png" alt="">
-          <img src="./images/admin-auth.png" alt="">
+        <h2 class="pl-10">My Profile</h2>
+        <div class="center">
+          <div class="avatar relative">
+          <img src="./images/avatar.png" alt="" />
+          <img class="absolute" src="./images/admin-auth.png" alt=""/>
+          </div>
         </div>
+        
         <div class="info-update">
           <form action="">
-           <div class="body">
-            <div class="left">
-              <div class="form-group w-50 i-block">
-                <label for="firstName">First Name</label>
-                <input type="text" name="firstName" id="firstName">
+            <div class="body flex">
+              <div class="left">
+               <div class="top flex">
+                <div class="form-group">
+                  <label for="firstName" class="i-block" >First Name</label>
+                  <input class="w-100" type="text" name="firstName" id="firstName" />
+                </div>
+                <div class="form-group">
+                  <label for="lastName" class="i-block" >Last Name</label>
+                  <input class="w-100" type="text" name="lastName" id="lastName" />
+                </div>
+               </div>
+               <div class="mail-password flex">
+                <div class="form-group">
+                  <label for="password"  class="i-block" >Password</label>
+                  <input
+                    class="br-5 w-100"
+                    type="password"
+                    name="password"
+                    id="password"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email"  class="i-block" >Email</label>
+                  <input class="w-100" type="email" name="email" id="email" />
+                </div>
+               </div>
+                <div class="form-group">
+                  <label for="phone"  class="i-block" >Phone</label>
+                  <input class="w-100" type="text" name="phone" id="phone" />
+                </div>
+                <div class="form-group">
+                  <label for="address" class="i-block" >Address</label>
+                  <input class="w-100" type="text" name="address" id="address" />
+                </div>
               </div>
-              <div class="form-group w-50 i-block">
-                <label for="lastName">First Name</label>
-                <input type="text" name="lastName" id="lastName">
+              <div class="right">
+                <div class="form-group relative drop">
+                  <label for="gender" class="i-block" >Gender</label>
+                  <select name="gender" id="gender" class="w-100">
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                  </select>
+                  <img src="./images/dropdown.png" alt="dropdown" class="drop absolute">
+                </div>
+                <div class="form-group relative drop">
+                  <label for="language" class="i-block" >Language</label>
+                  <select name="language" id="language" class="w-100">
+                    <option value="english">English</option>
+                    <option value="french">French</option>
+                  </select>
+                  <img src="./images/dropdown.png" alt="dropdown" class="absolute">
+                </div>
+                <div class="form-group w-100">
+                  <label for="date" class="i-block w-100" >Date of birth</label>
+                  <input class="w-100" type="date" name="date" id="date" value="" />
+                </div>
               </div>
-              <div class="form-group w-100">
-                <label for="password">First Name</label>
-                <input class="br-5" type="password" name="password" id="password">
-              </div>
-              <div class="form-group w-100">
-              <label for="email">Email</label>
-              <input type="email" name="email" id="email">
             </div>
-            <div class="form-group w-100">
-              <label for="phone">Phone</label>
-              <input type="text" name="phone" id="phone">
+            <div class="btn-group">
+              <button class="btn">Save</button>
             </div>
-            <div class="form-group w-100">
-              <label for="address">Address</label>
-              <input type="text" name="address" id="address">
-            </div>
-            </div>
-            <div class="right">
-              <div class="form-group w-100">
-                <label for="gender">Gender</label>
-                <input type="text" name="gender" id="gender">
-              </div>
-              <div class="form-group w-100">
-                <label for="gender">Language</label>
-                <input type="text" name="language" id="language">
-              </div>
-              <div class="form-group w-100">
-                <label for="gender">Date of birth</label>
-                <input type="text" name="gender" id="gender">
-              </div>
-            </div>
-           </div>
-              <div class="btn-group">
-                <buttun class="btn">Save</buttun>
-              </div>
           </form>
         </div>
         <!-- Notfications Wrapper -->
@@ -233,7 +252,7 @@
     <script src="https://unpkg.com/tippy.js@6"></script>
     <script src="./script/dashboard-template.js" defer></script>
     <script>
-        const list = document.getElementsByClassName('.list-group-item');
+      const list = document.getElementsByClassName(".list-group-item");
       const list_item = [
         "#dashboard",
         "#profile",
@@ -245,15 +264,15 @@
       ];
 
       for (i in list_item) {
-          let str = list_item[i].replace('#', '');
-          str == 'signout'? 'sign out':str;
+        let str = list_item[i].replace("#", "");
+        str == "signout" ? "sign out" : str;
         tippy(list_item[i], {
           content: str,
-        //   followCursor: true,
-          theme: 'dark',
+          //   followCursor: true,
+          theme: "dark",
         });
       }
-    // tippy.animation({delay: 5})
+      // tippy.animation({delay: 5})
     </script>
   </body>
 </html>

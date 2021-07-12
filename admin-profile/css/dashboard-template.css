@@ -25,6 +25,7 @@ body {
   background: #fff;
   position: fixed;
   box-shadow: 0 0 3px #777;
+  z-index: 99;
   /* display: none; */
 }
 .main-navbar.sticky {
