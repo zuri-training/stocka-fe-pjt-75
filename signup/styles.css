@@ -18,7 +18,7 @@
   display: flex;
   justify-content: start;
   position: relative;
-  right: 2.8%;
+  right: 3%;
   overflow: hidden;
 }
 
@@ -29,20 +29,6 @@
   height: 6%;
   z-index: 1;
 }
-
-/* .container .imgBox .left {
-  position: relative;
-  width: 20%;
-  height: 50%;
-  left: 0;
-} */
-
-/* .container .imgBox .right {
-  position: relative;
-  width: 80%;
-  height: 98%;
-  padding: 1% 0 1% 2%;
-} */
 
 .formBx .form {
   width: 100%;
@@ -107,6 +93,7 @@
 .form form .cmpnyName #org + small::after {
   position: absolute;
   top: -25px;
+  font-size: 0.8rem;
 }
 
 .form form .cmpnyName #org:invalid {
@@ -129,7 +116,7 @@
 }
 
 .formBx .form form a:visited {
-  color: #08378c;
+  color: #093e9c;
 }
 
 .formBx .form form .pwd {
@@ -142,13 +129,13 @@
   right: 0;
   width: 16px;
   height: 16px;
-  background: url(../images/eye.svg);
+  background: url(./assets/eye.svg);
   background-size: cover;
   cursor: pointer;
 }
 
 .formBx .form form .pwd #toggle.hide {
-  background: url(../images/eye-slash.svg);
+  background: url(./assets/eye-slash.svg);
   background-size: cover;
 }
 
@@ -274,12 +261,6 @@ form .pageBtm .check span input:checked::before {
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
-  /* .container .smLogo {
-    background-image: url(./images/Logo.svg);
-    height: 5%;
-    width: 5%;
-    background-size: cover;
-  } */
 
   * {
     margin: unset;
@@ -308,7 +289,7 @@ form .pageBtm .check span input:checked::before {
     left: 0;
     right: 0;
     font-size: 1.2rem;
-  }
+
 
   .formBx .form h2 {
     margin-top: 5%;

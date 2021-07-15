@@ -1,5 +1,4 @@
-*,
-body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -37,10 +36,9 @@ body {
   top: 10%;
   right: 5%;
   width: 100%;
-  /* height: 530px; */
   height: 110%;
   background: #08378c;
-  box-shadow: 0 5px 45px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 25px -7px rgba(0, 0, 0, 0.3);
 }
 
 .smallBg .box {
@@ -52,13 +50,6 @@ body {
   align-items: center;
   flex-direction: column;
 }
-
-/* .smallBg .box .image .whiteBg {
-  width: 117%;
-  height: 12%;
-  position: relative;
-  background-color: #fff;
-} */
 
 .smallBg .box .image .firstImg {
   position: relative;
@@ -86,16 +77,18 @@ body {
 }
 
 .container .formBx > a {
-  text-decoration: none;
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   position: relative;
   left: 75%;
   top: 5%;
-  color: #093e9c;
 }
 
+.container .formBx > a,
 .container .formBx > a:visited {
+  text-decoration: none;
   color: #093e9c;
+  outline: none;
+
 }
 
 .formBx .form {
@@ -129,24 +122,28 @@ body {
 }
 
 .formBx .form form .emailBox input {
-  width: 121%;
-  height: 60%;
+  width: 121.5%;
   position: relative;
-  right: 5%;
+  right: 5.2%;
+}
+
+.formBx .form form .emailBox label {
+  position: relative;
+  right: 4.8%;
 }
 
 .formBx .form form input::placeholder {
   font-size: 0.9rem;
 }
 
-.formBx .form form .emailBox label {
-  margin-left: -5%;
+.formBx .form form .passwdBox {
+  position: relative;
 }
 
 .formBx .form form .passwdBox #toggle {
   position: absolute;
-  top: 48.7%;
-  right: 25.5%;
+  top: 45%;
+  right: -7%;
   width: 16px;
   height: 16px;
   background: url(./images/eye.svg);
@@ -159,6 +156,27 @@ body {
   background-size: cover;
 }
 
+.formBx .form form a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-top: 6%;
+}
+
+.formBx .form form a,
+.formBx .form form a:visited {
+  color: #093e9c;
+}
+
+.formBx .form form .pageBtm {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  left: 2%;
+}
+
 .formBx .form form button {
   max-width: 110px;
   cursor: pointer;
@@ -166,39 +184,156 @@ body {
   color: #fff;
   background: #093e9c;
   font-size: 0.7rem;
-  /* font-weight: 400; */
+  font-family: inherit;
   border: none;
   border-radius: 6px;
   margin-bottom: 8%;
   vertical-align: middle;
 }
 
-.formBx .form form button:hover,
-.formBx .form form button:focus {
+.formBx .form form .pageBtm button:hover,
+.formBx .form form .pageBtm button:focus {
   background: #2550a7;
   outline: none;
 }
 
-.formBx .form form a,
-.formBx .form form p {
-  text-decoration: none;
-  font-size: 0.9rem;
-  margin-top: 6%;
+.formBx .form form .pageBtm span {
+  margin-left: -5%;
 }
 
-.formBx .form form p {
-  font-size: 0.7rem;
+/****************** Media Queries  ******************/
+
+@media screen and (max-width: 1024px) {
+  * {
+    font-size: 1.5rem;
+  }
+  .container {
+    margin: 0 auto;
+    width: 80%;
+    left: 0;
+    height: 80vh;
+    font-size: 1.5rem;
+  }
+
+  .bigBg {
+    height: 125%;
+    width: 25%;
+    right: 90%;
+  }
+
+  .smallBg {
+    top: 8%;
+    /* left: 1%; */
+    right: -10%;
+    width: 115%;
+  }
+
+  .smallBg .box .image .firstImg {
+    display: none;
+  }
+
+  .smallBg .box .image .logo {
+    width: 80%;
+    top: -3%;
+  }
+
+  .formBx {
+    top: 8%;
+    right: -10%;
+    padding: 2%;
+    width: 100%;
+    height: 110%;
+  }
+
+  .formBx .form {
+    position: relative;
+    top: 7%;
+    right: 2%;
+  }
+  .formBx .form form {
+    margin-top: 1%;
+  }
+
+  .container .formBx > a,
+  .formBx .form form .pageBtm span a {
+    font-size: 1.2rem;
+  }
+
+  .formBx .form form button {
+    font-size: 0.9rem;
+  }
+
+  .container .formBx > a {
+    left: 80%;
+    top: 4.4%;
+  }
+
+  .formBx .form form label {
+    font-size: 1.2rem;
+  }
+
+  .formBx .form form .emailBox input {
+    width: 124%;
+    right: 6.1%;
+    height: 100%;
+  }
+
+  .formBx .form form .emailBox label {
+    position: relative;
+    right: 5.9%;
+  }
+
+  .formBx .form form input::placeholder {
+    font-size: 0.95rem;
+  }
+  .formBx .form form .passwdBox #toggle {
+    transform: translateY(10px);
+  }
+
+  .formBx .form form .pageBtm span {
+    transform: translateX(10px);
+  }
 }
 
-.formBx .form form a:visited {
-  color: #093e9c;
-}
+@media screen and (min-width: 320px) and (max-width: 540px) {
+  * {
+    font-size: 1rem;
+  }
 
-.formBx .form form .pageBtm {
-/*   margin-top: 2%; */
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  text-align: center;
-  left: 2%;
+  body {
+    background-color: #fff;
+  }
+
+  .container .formBx > a {
+    position: fixed;
+    left: 68%;
+    top: 6.5%;
+  }
+
+  .bigBg {
+    visibility: hidden;
+  }
+
+  .smallBg {
+    right: 0;
+    width: 100%;
+  }
+
+  .smallBg .box .image .logo {
+    position: fixed;
+    width: 40%;
+    transform: translate(-30%, -9px);
+  }
+
+  .formBx {
+    right: 0;
+    width: 120%;
+    height: 120%;
+    transform: translate(8%, -4.5%);
+  }
+
+  .formBx .form form .passwdBox #toggle {
+    transform: translateY(0);
+  }
+ 
 }
