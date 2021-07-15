@@ -289,7 +289,7 @@ form .pageBtm .check span input:checked::before {
     left: 0;
     right: 0;
     font-size: 1.2rem;
-
+  }
 
   .formBx .form h2 {
     margin-top: 5%;
