@@ -3,9 +3,9 @@
 #### ABOUT STOCKA
 
 Stocka is a Digital inventory management platform
-
-
-
+#
+#
+#
 #### PROJECT (Purpose and Opportunity)
 
 This product is designed to enable Micro, Small and Medium Enterprises (MSMEs) track their stock.
