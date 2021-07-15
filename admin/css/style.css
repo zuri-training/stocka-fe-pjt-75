@@ -239,6 +239,17 @@
 .credential h3 span {
   font-size: 12px;
 }
+.account .date-time h5 {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-self: center;
+}
+.date-time h5 span{
+  align-self: center;
+  word-wrap: break-word;
+  white-space: pre-line;
+}
 /* last section */
 .sidebar.hide {
   display: none;
@@ -341,6 +352,7 @@
     grid-column: 1/6;
     grid-row: 2;
   }
+ 
   .account .status {
     grid-column: 7/13;
     grid-row: 2;
