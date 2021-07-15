@@ -254,7 +254,7 @@ form .pageBtm .check span input:checked::before {
   .form form .cmpnyName #org + small {
     font-size: 1rem;
   }
-  
+
   .formBx .form form .pwd #toggle {
     transform: translateY(45%);
   }
@@ -265,15 +265,23 @@ form .pageBtm .check span input:checked::before {
   * {
     margin: unset;
   }
-  
+
   .container {
     width: 83%;
     justify-content: unset;
   }
-  
+
   .container .imgBox {
     display: none;
   }
+
+  /* .formBx .form {
+    position: relative;
+    left: 0;
+    right: 0;
+    width: 120%;
+    margin: 0 auto;
+  } */
 
   .formBx .form {
     height: 60%;
@@ -281,16 +289,20 @@ form .pageBtm .check span input:checked::before {
     left: 0;
     right: 0;
     font-size: 1.2rem;
-  }
-  
+
+
   .formBx .form h2 {
     margin-top: 5%;
     font-size: 1.4em;
   }
-  
+
   .formBx .form form .btmPara {
     font-size: 0.6rem;
   }
+
+  /* .formBx .form form .pwd #toggle {
+    transform: translateY(50%);
+  } */
 }
 
 @media screen and (min-width: 320px) and (max-width: 375px) {
