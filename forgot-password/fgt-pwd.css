@@ -91,7 +91,7 @@ body {
   text-decoration: none;
 }
 
-.container .formBx .help a {
+.container .formBx .admin a {
   position: fixed;
   left: 75%;
   top: 15%;
@@ -99,7 +99,7 @@ body {
 }
 
 .formBx .form {
-  transform: translateY(40%);
+  transform: translateY(35%);
   transition: 0.3s;
 }
 
@@ -111,6 +111,7 @@ body {
 .formBx .form .pageHead h2 {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
+  margin-bottom: 1%;
 }
 
 .formBx .form .pageHead p {
@@ -157,10 +158,13 @@ body {
   padding: 13px 30px;
   color: #fff;
   background: #093e9c;
+  font-family: inherit;
   font-size: 0.7rem;
   border: none;
-  border-radius: 19px;
-  margin: 4%;
+  border-radius: 6px;
+  /* margin: 4%; */
+  margin: 2%;
+  vertical-align: middle;
 }
 
 .formBx .form form button:hover,
@@ -176,4 +180,174 @@ body {
 
 .formBx .form form p {
   margin-bottom: 2%;
+}
+
+/****************** Media Queries  ******************/
+
+@media screen and (max-width: 1024px) {
+  * {
+    font-size: 1.5rem;
+  }
+  .container {
+    margin: 0 auto;
+    width: 80%;
+    left: 0;
+    height: 80vh;
+    font-size: 1.5rem;
+  }
+
+  .container .formBx .admin a {
+    position: absolute;
+    top: 4.4%;
+    font-size: 0.9rem;
+    transform: translateX(-50%);
+  }
+
+  .bigBg {
+    height: 125%;
+    width: 25%;
+    right: 90%;
+  }
+
+  .smallBg {
+    top: 8%;
+    /* left: 1%; */
+    right: -10%;
+    width: 115%;
+  }
+
+  .smallBg .box .image .firstImg {
+    display: none;
+  }
+
+  .smallBg .box .image .whiteBg {
+    position: absolute;
+    height: 6%;
+    top: 3%;
+    margin-left: 57%;
+  }
+
+  /* .smallBg .box .image .logo {
+    width: 80%;
+    top: -3%;
+  } */
+
+  .formBx {
+    top: 8%;
+    right: -10%;
+    padding: 2%;
+    width: 100%;
+    height: 110%;
+  }
+
+  .formBx .form {
+    position: relative;
+    top: 7%;
+    right: 2%;
+  }
+  .formBx .form form {
+    margin-top: 1%;
+  }
+
+  .container .formBx > a,
+  .formBx .form form .pageBtm span a,
+  .formBx .form form label {
+    font-size: 1.2rem;
+  }
+
+  .formBx .form form button {
+    font-size: 0.9rem;
+    margin: 4%;
+  }
+
+  .container .formBx > a {
+    left: 80%;
+    top: 4.4%;
+  }
+
+  .formBx .form form .emailBox input {
+    width: 124%;
+    right: 6.1%;
+    height: 100%;
+  }
+
+  .formBx .form form .emailBox label {
+    position: relative;
+    right: 5.9%;
+  }
+
+  .formBx .form form input::placeholder {
+    font-size: 0.95rem;
+  }
+  /* .formBx .form form .passwdBox #toggle {
+    transform: translateY(10px);
+  } */
+
+  /* .formBx .form form .pageBtm span {
+    transform: translateX(10px);
+  } */
+  .formBx .form form p {
+    font-size: 0.7rem;
+    margin-bottom: 4%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .smallBg .box .image .whiteBg {
+    right: -90%;
+  }
+
+  .smallBg .box .image .logo {
+    top: -55%;
+    right: 55%;
+  }
+
+  .container .formBx .admin a {
+    transform: translateX(-5%);
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 540px) {
+  * {
+    font-size: 1rem;
+  }
+
+  body {
+    background-color: #fff;
+  }
+
+  .container .formBx > a {
+    position: fixed;
+    left: 68%;
+    top: 6.5%;
+  }
+
+  .bigBg {
+    visibility: hidden;
+  }
+
+  .smallBg {
+    right: 0;
+    width: 100%;
+  }
+
+  /* .smallBg .box .image .logo {
+    position: fixed;
+    width: 40%;
+    transform: translate(-30%, -9px);
+  } */
+
+  .formBx {
+    right: 0;
+    width: 120%;
+    height: 120%;
+    transform: translate(8%, -4.5%);
+  }
+
+  /* .formBx .form form .passwdBox #toggle {
+    transform: translateY(0);
+  } */
+  .formBx .form form input {
+    right: 16%;
+  }
 }
