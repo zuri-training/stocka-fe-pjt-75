@@ -88,7 +88,6 @@ body {
   text-decoration: none;
   color: #093e9c;
   outline: none;
-
 }
 
 .formBx .form {
@@ -177,6 +176,22 @@ body {
   left: 2%;
 }
 
+/* .formBx .form form button {
+  max-width: 120px;
+  cursor: pointer;
+  padding: 10px 25px;
+  color: #fff;
+  background: #093e9c;
+  font-size: 0.7rem;
+  font-family: inherit;
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 8%;
+  vertical-align: middle;
+
+  position: relative;
+} */
+
 .formBx .form form button {
   max-width: 110px;
   cursor: pointer;
@@ -196,6 +211,14 @@ body {
   background: #2550a7;
   outline: none;
 }
+
+
+/* .formBx .form form .pageBtm button a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.7rem;
+  outline: none;
+} */
 
 .formBx .form form .pageBtm span {
   margin-left: -5%;
@@ -261,6 +284,9 @@ body {
 
   .formBx .form form button {
     font-size: 0.9rem;
+    /* text-align: center;
+    vertical-align: middle; */
+
   }
 
   .container .formBx > a {
@@ -268,9 +294,9 @@ body {
     top: 4.4%;
   }
 
-  .formBx .form form label {
+  /* .formBx .form form label {
     font-size: 1.2rem;
-  }
+  } */
 
   .formBx .form form .emailBox input {
     width: 124%;
@@ -289,6 +315,10 @@ body {
   .formBx .form form .passwdBox #toggle {
     transform: translateY(10px);
   }
+
+  /* .formBx .form form .pageBtm span {
+    margin-left: 0;
+  } */
 
   .formBx .form form .pageBtm span {
     transform: translateX(10px);
