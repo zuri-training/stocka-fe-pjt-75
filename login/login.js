@@ -21,8 +21,8 @@ loginForm.addEventListener("submit", async function (e) {
             headers: {
                 "Content-Type": "application/json"
             }
-        })
-        .then ((response) => response.json())
+        });
+        .then ((response) => response.json());
         .then ((response) => {
             console.log(response);
             localStorage.setItem("access_token", response.user.token.access);
@@ -30,12 +30,12 @@ loginForm.addEventListener("submit", async function (e) {
 //             console.log(response.status);
 
             if (response.ok) {
-//                 window.location.href="../user-dashboard/index.html"
-                location.assign("../user-dashboard/index.html");
+                window.location.href="../user-dashboard/index.html"
+//                 location.assign("../user-dashboard/index.html");
             }
-//             else {
-//                 alert(response.error);
-//             }
+            else {
+                alert(response.error);
+            }
         
         })
 //         .then (data => {
@@ -43,6 +43,5 @@ loginForm.addEventListener("submit", async function (e) {
 //         })
     } catch (error) {
         console.error(error);
-        alert(response.error);
     }
 });
