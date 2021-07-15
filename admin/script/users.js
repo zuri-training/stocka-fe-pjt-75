@@ -2,10 +2,11 @@
 // gets a list of users
 const url_users = "https://stocka-zuri-api.herokuapp.com/auth/users/";
 const token =
-  "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjI2MzUwMDkzLCJqdGkiOiJjMGYxZDA5NzZiMDc0NDc5OWY5YzI3ZDMxY2VjZDQxZiIsInVzZXJfaWQiOjEzfQ.22Z7DGpCE3bWZJRyDsXkuiUK-h5ilECVH97rWnLitGo";
+  "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjI2MzUzNTY4LCJqdGkiOiIzZDU0NmI1ZDRiMjM0YzViOGQzMDJjM2EwNjgyMmQ3NCIsInVzZXJfaWQiOjEzfQ.QwuPJ0Do-r6QFv29YEUoU4aj2Bd8MaZXI9be78GPlIQ";
 const users = [];
 let url_img = "https://image.flaticon.com/icons/png/128/847/847969.png";
 let accounts = document.getElementById("accounts");
+let customer_count = document.getElementById("count");
 
 function createAccountElement(name, email, company_name) {
   let _name = name;
@@ -101,9 +102,10 @@ async function get_users(url) {
     },
   })
     .then((response) => response.json())
-    .then((u) => {
-      console.log(u);
-      users.push(u.results);
+    .then((user) => {
+      console.log(user);
+      users.push(user.results);
+      customer_count.innerHTML = user.count;
     })
     .catch((error) => console.log(error));
 }
