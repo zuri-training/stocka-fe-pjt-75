@@ -27,7 +27,7 @@ loginForm.addEventListener("submit", async function (e) {
             console.log(response);
             localStorage.setItem("access_token", response.user.token.access);
             localStorage.setItem("refresh_token", response.user.token.refresh);
-            console.log(response.status);
+//             console.log(response.status);
 
             if (response.ok) {
                 window.location.href="../user-dashboard/index.html"
@@ -37,9 +37,9 @@ loginForm.addEventListener("submit", async function (e) {
             }
         
         })
-        .then (data => {
-            console.log(data);
-        })
+//         .then (data => {
+//             console.log(data);
+//         })
     } catch (error) {
         console.error(error);
     }
