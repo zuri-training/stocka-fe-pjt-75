@@ -38,6 +38,9 @@ PROJECT DOCUMENTATION
 https://docs.google.com/document/d/1-2hXzQ2AXQ554j54k_n6j9iI-xaqNb9vQFQrgad2iRs
 
 
+#### PROJECT LINK
+https://stocka.netlify.app/
+
 
 THE AMAZING FRONT-END TEAM
 
@@ -50,3 +53,5 @@ THE AMAZING FRONT-END TEAM
 
 
 MENTOR : Rasheed Mikail Abiodun - @AALOLE
+
+#### PROJECT MANAGER : Tochukwu
