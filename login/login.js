@@ -22,9 +22,11 @@ loginForm.addEventListener("submit", async function (e) {
                 "Content-Type": "application/json"
             }
         })
+        .then ((response) => response.json())
         .then ((response) => {
-            console.log(response.json());
-            localStorage.setItem("token", response.token);
+            console.log(response);
+            localStorage.setItem("access_token", response.user.token.access);
+            localStorage.setItem("refresh_token", response.user.token.refresh);
             console.log(response.status);
 
             if (response.ok) {
