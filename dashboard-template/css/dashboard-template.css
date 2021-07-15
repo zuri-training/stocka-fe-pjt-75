@@ -17,7 +17,6 @@ body {
 .main-navbar {
   display: flex;
   width: 100%;
-  /* overflow-x: hidden; */
   justify-content: space-between;
   align-items: center;
   height: 50px;
@@ -30,6 +29,7 @@ body {
 .main-navbar.sticky {
   box-shadow: 0 0 3px #777;
   position: fixed;
+  background-color: rgb(228, 222, 222);
 }
 
 .nav-img {
@@ -67,8 +67,7 @@ body {
 }
 .profile-md .badge {
   position: absolute;
-  /* top: -6px; */
-  right: -4px;
+  /* right: -4px; */
   bottom: 10px;
   background-color: #ed1111;
   padding: 0 5px;
@@ -97,15 +96,11 @@ body {
   display: none;
   font-size: 35px;
   cursor: pointer;
-  position: fixed;
-  top: 50px;
-  z-index: 90;
-  /* padding: 5px; */
-  /* left: 20px; */
-  background: var(--darkblue);
-  color: #fff;
-  border-top-right-radius: 50px;
-  border-bottom-right-radius: 50px;
+  /* position: fixed; */
+  
+
+  color: #000;
+ 
 }
 
 /* side pane section */
@@ -115,14 +110,11 @@ body {
   background-color: var(--darkblue);
   padding: 10px 0px;
   /* height: 100vh; */
-  /* position: fixed; */
-  position: fixed;
+
   width: auto;
   height: 100%;
   top: 50px;
-  /* margin-right: 20px; */
   left: 0;
-  margin-left: 0;
   padding-bottom: 50px;
 
   overflow-y: scroll;
@@ -199,8 +191,6 @@ body {
 
 .side-pane.active .title{
   display: contents !important;
-  /* left: 0; */
-  /* width: 50%; */
   transition: all 0.2s ease-in-out;
 }
 .side-pane #dashboard {
@@ -210,8 +200,6 @@ body {
 .dashboard-main {
   background-color: #ddd;
   padding: 20px;
-  /* position: relative;
-  left: 0; */
   margin-left: 12%;
   padding-top: 70px;
   padding-left: 65px;
@@ -297,10 +285,10 @@ body {
     display: contents;
   }
   .side-pane {
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    top: 100px;
-    height: 80%;
+    /* border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px; */
+    top:50px;
+    height: 100%;
     overflow-y: hidden;
   }
   .dashboard-main {
