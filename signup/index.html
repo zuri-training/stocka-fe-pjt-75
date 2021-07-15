@@ -9,11 +9,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
     <script src="./script.js" defer></script>
+    <script src="./signup.js" defer></script>
     <title>Stocka</title>
 </head>
 <body>
     <div class="container">
-        <!-- <div class="smLogo"><img class="smLogoImg" src="./images/Logo.svg" alt="logo for smaller screens"></div> -->
+       
         <div class="imgBox">
           
             <img class="left" src="./assets/Frame 9.png" alt="decorative image" />
@@ -73,58 +74,5 @@
         
     </div>
 
-    <script>
-        const regForm = document.querySelector("#regForm");
-
-        regForm.addEventListener("submit", function (e) {
-            e.preventDefault();
-
-            const url = "https://stocka-zuri-api.herokuapp.com/auth/register/";
-
-
-            const company_name = document.querySelector("#org").value;
-            const full_name = document.querySelector("#name").value;
-            const email = document.querySelector("#mail").value;
-            const password = document.querySelector("#pwd").value;
-
-            // const formData = new FormData(this);
-
-            fetch (url, {
-                method: "POST",
-                // body: formData
-
-                body: JSON.stringify ({
-                    "company_name": company_name,
-                    "full_name": full_name,
-                    "email": email,
-                    "password": password
-                }),
-                headers: {
-                    'Content-Type': 'application/json'
-                }
-            })
-            .then ((response) => {
-                console.log(response.json());
-                localStorage.setItem("token", response.token);
-                console.log(response.status);
-
-                if (response.status === 201) {
-                    alert("Your account has been registered! You will receive an email shortly");
-                } else {
-                    alert("Oops! Something went wrong");
-                }
-            })
-            .then (data => {
-                console.log(data);
-            })
-            .catch (error => {
-                console.error(error);
-            });
-        });
-
-
-
-    </script>
-    
 </body>
 </html>

@@ -145,13 +145,13 @@ body {
   right: -7%;
   width: 16px;
   height: 16px;
-  background: url(../images/eye.svg);
+  background: url(./images/eye.svg);
   background-size: cover;
   cursor: pointer;
 }
 
 .formBx .form form .passwdBox #toggle.hide {
-  background: url(../images/eye-slash.svg);
+  background: url(./images/eye-slash.svg);
   background-size: cover;
 }
 
@@ -182,10 +182,13 @@ body {
   padding: 10px 25px;
   color: #fff;
   background: #093e9c;
+  font-size: 0.7rem;
+  font-family: inherit;
   border: none;
   border-radius: 6px;
-  margin: 0 0 8% 20%;
+  margin-bottom: 8%;
   vertical-align: middle;
+
   position: relative;
 } */
 
@@ -203,11 +206,12 @@ body {
   vertical-align: middle;
 }
 
-.formBx .form form .pageBtm button a:hover,
-.formBx .form form .pageBtm button a:focus {
+.formBx .form form .pageBtm button:hover,
+.formBx .form form .pageBtm button:focus {
   background: #2550a7;
   outline: none;
 }
+
 
 /* .formBx .form form .pageBtm button a {
   text-decoration: none;
@@ -282,6 +286,7 @@ body {
     font-size: 0.9rem;
     /* text-align: center;
     vertical-align: middle; */
+
   }
 
   .container .formBx > a {
@@ -360,4 +365,5 @@ body {
   .formBx .form form .passwdBox #toggle {
     transform: translateY(0);
   }
+ 
 }

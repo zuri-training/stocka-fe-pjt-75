@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root {
+    --darkblue: #093E9C;
+    --lightblue: #4dd4ff;
+    --pink: #d32eee;
+    --yellow: #fff500;
+  }
+  body{
+      position: relative;
+  }
+  /* Navbar section */
+  .main-navbar {
+    display: flex;
+    width: 100%;
+    overflow-x: hidden;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0 10px;
+    
+  }
+  .main-navbar.sticky{
+      box-shadow: 0 0 3px #777;
+      position: fixed;
+      background-color: #777;
+      z-index: 10;
+  }
+  .harmburger-menu {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .nav-img {
+    padding: 0 20px;
+  }
+  .logo {
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    margin-bottom: 10px;
+  }
+  .logo h1 span {
+    color: var(--blue);
+  }
+  .logo-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+  }
+  
+  .main-nav {
+    height: 5vh;
+  
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  .profile-md {
+    position: relative;
+    display: flex;
+    justify-content: end;
+  }
+  .profile-md .badge {
+    position: absolute;
+    top: -6px;
+    right: 0px;
+    background-color: #ed1111;
+    padding: 0 5px;
+  
+    text-align: center;
+    color: #fff;
+  }
+  .profile-md .bell {
+    font-size: 30px;
+    color: #494848;
+  }
+  .nav-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+  }
+  .right-nav {
+    display: flex;
+    justify-content: space-around;
+    width: 10%;
+  }
+  
+  /* side pane section */
+  .side-pane{
+      width: 15%;
+      background-color: var(--darkblue);
+       
+      padding: 10px 24px;
+      height: 120vh;
+  }
+  .side-pane ul li{
+    position: relative;
+    list-style-type: none;
+    line-height: 50px;
+    height: 50px;
+    
+    width: 100%;
+}
+.side-pane ul li:first-child{
+    padding: 20px 0;
+    height: 100px;
+}
+.side-pane ul li a{
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    
+    text-align: center;
+    transition: all .3s ease-in-out;
+}
+.side-pane ul li a:hover{
+    background-color: #494848;
+}
+.side-pane ul li a i{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+
+}
+.side-pane ul li .tooltip{
+    width: 100px;
+    height: 50px;
+    background-color: #fff;
+    box-shadow: 0 0 3px #777;
+    color: var(--fill);
+    position: absolute;
+    top: 0;
+    text-align: center;
+    left: 150px;
+    line-height: 35px;
+    opacity: 0;
+    transition: 0;
+    /* transform: translateY(-50%); */
+}
+  /* Main wrapper */
+  .main-wrapper{
+      display: flex;
+      
+  }
+  .main-body{
+      width: 85%;
+      
+      
+      
+  }
+  .tooltip{
+      display: none;
+  }
+  .side-pane.active{
+       left: 0;
+      width: 50%;
+      transition: all .2s ease-in-out;
+
+  } 
+  /* main body */
+  .title-profile{
+    padding: 30px 40px;
+  }
+  .user-info{
+      box-shadow: 0 0 3px #777;
+      padding: 20px 50px;
+  }
+  .user-form{
+    box-shadow: 0 0 3px #fff;
+   
+  }
+  .col-md ul li{
+    color: rgb(107, 106, 106);
+    margin: 5px 0;
+  }
+  .prof-img{
+    width: 100px;
+    height: 100px;
+  }
+  .user-details{
+      padding: 0px 20px;
+  }
+  .user-info{
+      display: flex;
+      justify-content: space-between;
+  }
+  .col-md-img{
+    width: 20%;
+    
+  }
+  .col-md-flex{
+    display: flex;
+    justify-content: space-between;
+  }
+  .col-bg{
+    width: 80%;
+   
+  }
+  .list-group{
+    margin-top: 20px;
+  }
+  .col-md ul li{
+    list-style-type: none;
+  }
+
+  /* form design */
+  .user-form{
+    padding: 14px 20px;
+    box-shadow: 0 0 3px #777;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  .form__info{
+    display: flex;
+    justify-content: space-between;
+  }
+  .form__content{
+    margin: 10px 0;
+  }
+.form__content label{
+  display: block;
+  color: rgb(31, 29, 29);
+  font-size: 1em;
+  margin-bottom: 5px;
+}
+.contact__form,
+.social__form{
+  width: 100%;
+}
+.form__content input[type="text"]{
+  
+  outline: none;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid gray;
+
+}
+.address{
+  width: 40%;
+}
+.phone{
+  width: 80%;
+}
+.form__content button{
+  padding: 8px 60px;
+  background-color: var(--darkblue);
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  
+}
+  @media screen and (max-width: 768px){
+      .harmburger-menu{
+          display: block;
+      }
+      .side-pane{
+          left: -1000px;
+          position: fixed;
+      }
+      .main-body{
+          width: 100%;
+      }
+      .col-md-img{
+        width: 100%;
+      }
+      .col-bg{
+        width: 100%;
+      }
+      .user-info,
+      .col-md-flex{
+        flex-direction: column;
+        padding: 20px 0;
+        width: 100%;
+        text-align: center;
+      }
+      
+      .address,
+      .phone{
+        width: 100%;
+      }
+      .form__info{
+        flex-direction: column;
+        width: 100%;
+      }
+  } 
