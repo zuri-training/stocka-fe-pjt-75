@@ -26,15 +26,16 @@ loginForm.addEventListener("submit", async function (e) {
         .then ((response) => {
             console.log(response);
             localStorage.setItem("access_token", response.user.token.access);
-//             localStorage.setItem("refresh_token", response.user.token.refresh);
+            localStorage.setItem("refresh_token", response.user.token.refresh);
 //             console.log(response.status);
 
             if (response.ok) {
-                window.location.href="../user-dashboard/index.html"
+//                 window.location.href="../user-dashboard/index.html"
+                location.assign("../user-dashboard/index.html");
             }
-            else {
-                alert(response.error);
-            }
+//             else {
+//                 alert(response.error);
+//             }
         
         })
 //         .then (data => {
@@ -42,5 +43,6 @@ loginForm.addEventListener("submit", async function (e) {
 //         })
     } catch (error) {
         console.error(error);
+        alert(response.error);
     }
 });
