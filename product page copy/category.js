@@ -5,9 +5,9 @@
 // const result = document.getElementById("result");
 const form = document.querySelector("#form");
 const _name = document.querySelector("#product-name");
-// const token = localStorage.getItem("token");
-const token =
-  "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjI2MzY1Njk0LCJqdGkiOiI2ZTQ1NTM3NGZiZjc0MjIxYjMxOWUwYmVjMDNmNGY4NiIsInVzZXJfaWQiOjEzfQ.WoA84AtftycAgZJYzKIrmtU5VgIycB2avkwnJHUjnmU";
+const token = localStorage.getItem("token");
+// const token =
+  "eyJ0eXAiOiJKV1QiLCJh;
 window.addEventListener("load", async () => {
   console.log("loaded");
 
