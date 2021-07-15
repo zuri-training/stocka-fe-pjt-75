@@ -111,12 +111,9 @@ background-color: chartreuse;
 } */
 .chart-js{
     /* background-color: #D11464; */
-    box-shadow: -15px -15px rgba(255,255,255,0.5),
-    15px 15px 15px rgba(0,0,0,0.1),
-    inset -5px -5px 5px rgba(255,255,255,0.2),
-    inset 5px 5px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 0 3px #777;
     
-} 
+}
 
 .profile-md{
     position: relative;
@@ -172,14 +169,13 @@ color: saddlebrown;
    
 }
 /* mid div */
-.total-value{
+.total-value{ 
+    
+
     padding: 6px 18px;
     border-radius: 5px;
-    box-shadow: -15px -15px rgba(255,255,255,0.5),
-    15px 15px 15px rgba(0,0,0,0.1),
-    inset -5px -5px 5px rgba(255,255,255,0.2),
-    inset 5px 5px 5px rgba(0,0,0,0.1);
-    margin-bottom: 10px;
+    box-shadow: 0 0 3px #777;
+    margin-bottom: 20px;
 }
 .store-value{
     margin: 10px 0;
@@ -233,10 +229,7 @@ color: saddlebrown;
 }
 .sales > div{
     margin: auto;
-    box-shadow: -15px -15px rgba(255,255,255,0.5),
-                 15px 15px 15px rgba(0,0,0,0.1),
-                 inset -5px -5px 5px rgba(255,255,255,0.2),
-                 inset 5px 5px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 0 3px #777;
 }
 .sale-product{
     display: flex;
@@ -297,12 +290,13 @@ color: saddlebrown;
     justify-content: space-around;
 }
 .perfomance{
-    padding: 5px 10px;
-    box-shadow: -15px -15px rgba(255,255,255,0.5),
-    15px 15px 15px rgba(0,0,0,0.1),
-    inset -5px -5px 5px rgba(255,255,255,0.2),
-    inset 5px 5px 5px rgba(0,0,0,0.1);
+    padding: 30px 18px;
+    box-shadow: 0 0 3px #777;
     margin: 20px 0;
+
+    border-radius: 5px;
+
+   
 }
 .tips{
     /* padding: 10px 5px; */
@@ -325,10 +319,7 @@ color: saddlebrown;
 .table {
     border-collapse: collapse;
     width: 100%;
-    box-shadow: -15px -15px rgba(255,255,255,0.5),
-    15px 15px 15px rgba(0,0,0,0.1),
-    inset -5px -5px 5px rgba(255,255,255,0.2),
-    inset 5px 5px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 0 3px #777;
     border-radius: 5px;
 
 

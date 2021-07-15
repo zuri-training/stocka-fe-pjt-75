@@ -29,6 +29,7 @@ body {
 .notifications-wrapper {
   display: grid;
   grid-template-columns: 1fr 4fr;
+  padding-top: 50px;
 }
 /* Modal-wrapper */
 .modal-wrapper,
@@ -37,10 +38,7 @@ body {
   top: 50px;
   background-color: #fff;
   right: 0;
-  box-shadow: -15px -15px rgba(255, 255, 255, 0.5),
-    15px 15px 15px rgba(0, 0, 0, 0.1),
-    inset -5px -5px 5px rgba(255, 255, 255, 0.2),
-    inset 5px 5px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 3px #777;
   width: 25%;
   z-index: 1;
   display: none;
@@ -78,6 +76,7 @@ body {
   border-radius: 50%;
   margin-top: 10px;
   text-align: center;
+  box-shadow: 0 0 3px #777;
 }
 .profile-img {
   text-align: center;

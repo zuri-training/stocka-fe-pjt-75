@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="css/style.css" />
     <link rel='stylesheet' href="css/notifications.css" />
+    <link rel="stylesheet" href="../dashboard-template/css/dashboard-template.css"/>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -39,28 +40,50 @@
     </nav>
     <div class="notifications-wrapper">
       <div class="side-pane">
-        <li>
-          <a href="#"><i class="fas fa-chess-board"></i> Dashboard</a>
-        </li>
-        <li>
-          <a href="#Profile"><i class="far fa-user-circle"></i> Profile</a>
-        </li>
-        <li>
-          <a href="#Stores"><i class="fas fa-store"></i> Stores</a>
-        </li>
-        <li>
-          <a href="../product-page/index.html"><i class="fas fa-columns"></i>  Products</a>
-        </li>
-        <li>
-          <a href="../report-page/report-page.html"><i class="fas fa-chart-line"></i> Report</a>
-        </li>
-        <li>
-          <a href="#Settings"><i class="fas fa-cog"></i> Settings</a>
-        </li>
-        <li>
-          <a href="../login/login.html">
-            <i class="fas fa-sign-out-alt"></i> Sign out</a>
-        </li>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <a href="../user-dashboard/index.html" id="dashboard">
+              <span class="icon"><i class="fas fa-chess-board"></i></span>
+              <span class="title">Dashboard</span>
+            </a>
+          </li>
+          <li class="list-group-item">
+            <a href="../user-profile/user-profile.html" id="profile">
+              <span class="icon"><i class="far fa-user-circle"></i></span>
+              <span class="title">Profile</span>
+            </a>
+          </li>
+          <li class="list-group-item">
+            <a href="#" id="stores">
+              <span class="icon"><i class="fas fa-store"></i></span>
+              <span class="title">Stores</span>
+            </a>
+          </li>
+          <li class="list-group-item">
+            <a href="../product page copy/index.html" id="product">
+              <span class="icon"><i class="fas fa-columns"></i></span>
+              <span class="title">Products</span>
+            </a>
+          </li>
+          <li class="list-group-item">
+            <a href="../report-page/report-page.html" id="report">
+              <span class="icon"><i class="fas fa-chart-line"></i></span>
+              <span class="title">Report</span>
+            </a>
+          </li>
+          <li class="list-group-item">
+            <a href="#Settings" id="settings">
+              <span class="icon"><i class="fas fa-cog"></i></span>
+              <span class="title">Settings</span>
+            </a>
+          </li>
+          <li class="list-group-item">
+            <a href="../login/login.html" id="signout">
+              <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+              <span class="title">Sign out</span>
+            </a>
+          </li>
+          </ul>
       </div>
       <div class="main">
          <div class="top-nav">
