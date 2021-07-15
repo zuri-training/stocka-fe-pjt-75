@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stocka</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stocka.css">
 </head>
+
 <body>
     <div class="wrapper">
         <header>
@@ -15,34 +24,35 @@
                     <img src="IMAGES/Logo.png" alt="Logo">
                 </div>
                 <div class="logo_right">
-                    <a href="#"> Features</a>
-                    <!-- <ul>
-                        <li class="active"> <a href="#"> Features</a>
-
-                            <div class="sub-menu1">
-                                <ul>
-                                    <li>Inventory Management</li>
-                                    <li>analytics</li>
-                                    <li>Reports</li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul> -->
-                    
-                        
+                    <div>
+                        <a class="features_link" id="features_link">
+                            Features
+                            <svg width="10" height="5" viewBox="0 0 10 5" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0L5 5L10 0H0Z" fill="black" />
+                            </svg>
+                        </a>
+                        <div class="sub-menu1" id="sub-menu1">
+                            <a href="../inventory-management/">Inventory Management</a>
+                            <a href="../analytics/index.html">Analytics</a>
+                            <a href="">Reports</a>
+                        </div>
+                    </div>
                     
                     <a href="#" class="price"> Pricing </a>
-                    <button class="b1">LOGIN</button>
+                    <a href="#" class="b1"> LOGIN </a>
                     <button class="b2"> SIGN UP </button>
-                </div> 
+                </div>
             </nav>
         </header>
 
         <main>
             <section class="section1 ">
                 <div class="inventory">
-                    <h2 class="man">Inventory management <span style="display: block; margin-right: 195px;">we got you</span> </h2>
-                    <p class="sub_man">with our robust inventory management software, you <br> can increase your sales and keep track of every unit</p>
+                    <h2 class="man">Inventory management <span style="display: block; margin-right: 230px;">we got
+                            you</span> </h2>
+                    <p class="sub_man">with our robust inventory management software, you <br> can increase your sales
+                        and keep <br> track of every unit</p>
                     <button class="btn_man"> SIGN UP FOR FREE</button>
                 </div>
                 <div class="chatbox">
@@ -51,73 +61,109 @@
             </section>
 
             <section class="section2">
-                <h4> make the switch from paper to digital</h4>
+                <!-- <h4> make the switch from paper to digital</h4> -->
                 <div class="vectors">
-                    <div class="invt_mngt">
+                    <div class="invt_mngt vector-el">
                         <img src="IMAGES/Vector Left.png" alt="">
                         <h2> INVENTORY MANAGEMENT </h2>
-                        <p> Manage your online and offline stocks <br>and commodities with our efficient <br>management system.</p>
+                        <p> Manage your online and offline stocks <br>and commodities with our efficient <br>management
+                            system.</p>
                     </div>
-                    <div class="analytics">
+                    <div class="analytics vector-el">
                         <img src="IMAGES/Vector center.png" alt="">
                         <h2>ANALYTICS</h2>
-                        <p> with our robust inventory <br> management software, you can <br> increase your sales and keep track of <br> every unit</p>
+                        <p> With our robust inventory <br> management software, you can <br> increase your sales and
+                            keep track of <br> every unit</p>
                     </div>
-                    <div class="crm">
+                    <div class="crm vector-el">
                         <img src="IMAGES/Vector_right.png" alt="">
                         <h2> CRM INTEGRATION </h2>
-                        <p> with our robust inventory <br> management software, you can <br>increase your sales and keep track of <br> every unit </p>
+                        <p> with our robust inventory <br> management software, you can <br>increase your sales and keep
+                            track of <br> every unit </p>
                     </div>
                 </div>
 
             </section>
 
             <section class="section3">
-               
                 <img src="IMAGES/dashboard 1.png" alt="dashboard image">
-                
             </section>
 
             <section class="section4">
-                <!-- <img src="images/section4_background.png" alt=""> -->
-                <!-- <div class="card1">
-                    <img src="IMAGES/card_image1.png" alt="">
-                    <h4> SIGN UP/LOGIN</h4>
-                    <p>Click sign up and fill up a company profile or if an existing member login </p>
+        
+                
+                <h2>How it Works</h2>
+                
+                <div class="s4-img_wrap section4-main">
+                    <div class="s4-1">
+                        <p class="one">01</p>
+                        <div class="s4-one card">
+                            <img src="IMAGES/card_image1.png" alt="">
+                            <h4> SIGN UP/LOGIN</h4>
+                            <p>Click sign up and fill <br> out a company profile. <br>
+                                or if an existing  <br> member login</p>
+                        </div>
+                    </div>
+                    
+                    <div class="s4-2">
+                        <p class="two">02</p>
+                        <div class="s4-two card">
+                            <img src="images/card_image2.png" alt="">
+                            <h4>CREATE</h4>
+                            <P>Add product list or <br> import an .xls file <br> (Stocka file)</P>
+                        </div>
+                    </div>
+                    
+                    <div class="s4-3">
+                        <p class="three">03</p>
+                        <div class="s4-three card">
+                            <img src="images/card_image3.png" alt="">
+                            <h4>ACCESS</h4>
+                            <P>Gain access to the <br> platform</P>
+                        </div>
+                    </div>
+                    
+                    <div class="s4-4">
+                        <p class="four">04</p>
+                        <div class="s4-four card">
+                            <img src="images/card_image4.png" alt="">
+                            <h4>MAINTAIN</h4>
+                            <p>Maintain inventory <br> effectively and faster</p>
+                        </div>
+                    </div>
+                    
                 </div>
-                <div class="card2"></div>
-                <div class="card3"></div>
-                <div class="card4"></div> -->
+                
             </section>
 
             <section class="section5">
                 <h2 class="testimonial">TESTIMONIALS</h2>
                 <div class="wrap">
-                    <!-- <div class="section5_images">
-                        
-                    </div> -->
-                
-                        <div class="one">
-                            <img src="images/section5_image1.png" alt="">
-                            <h2> <b> EMI JAPAN SPAREPARTS </b></h2>
-                            <p> Manage your online and offline stocks <br><br>with our efficient management <br><br> system</p>
 
-                        </div>
-                        <div class="two">
-                            
-                            <img src="images/section5_image2.png" alt="">
-                            <h2> <b> YARI FARMS </b></h2>
-                            <p> Increase your sales with our robust <br> <br> inventory management software and <br> <br> track of each unit</p>
+                    <div class="one">
+                        <img src="images/section5_image1.png" alt="">
+                        <h2 class="japan"> <b> EMI JAPAN SPAREPARTS </b></h2>
+                        <p class="s5-para"> Manage your online and offline stocks <br><br>with our efficient management <br><br> system
+                        </p>
 
-                        </div>
-                        <div class="three">
-                            <img src="images/section5_image3.png" alt="">
-                            <h2> <b> Z COSMETICS </b></h2>
-                            <p> With our robust inventory <br> <br> management software, increase your <br> <br> sales and track of every unit </p>
+                    </div>
+                    <div class="two">
 
-                        </div>
-                        
-                    
+                        <img src="images/section5_image2.png" alt="">
+                        <h2 class="japan yari"  > <b> YARI FARMS </b></h2>
+                        <p class="s5-para"> Increase your sales with our robust <br> <br> inventory management software and <br> <br>
+                            track of each unit</p>
+
+                    </div>
+                    <div class="three">
+                        <img src="images/section5_image3.png" alt="">
+                        <h2 class="japan"> <b> Z COSMETICS </b></h2>
+                        <p class="s5-para"> With our robust inventory <br> <br> management software, increase your <br> <br> sales and
+                            track of every unit </p>
+
+                    </div>
+
+
                 </div>
             </section>
             <section class="section6">
@@ -132,70 +178,83 @@
             <section class="section7">
                 <h2>No Hidden Fees.Simple Pricing</h2>
                 <div class="cardwrap">
-                    <div class="card1">
-                       <h2 style="padding-bottom: 5px;"> FREE </h2>
-                       <div class="amount"> 
-                           <sup>#</sup>
-                           <p>0</p>
-            
-                            <!-- <p style="font-family: sans-serif; font-size: 64px; font-weight: 600;"><sup style="font-size: 20px;">#</sup>0</p> -->
+                    <div class="card1 carding">
+                        <h2 style="padding-bottom: 5px;"> FREE </h2>
+                        <div class="amount">
+                            <sup>#</sup>
+                            <p>0</p>
                         </div>
-                        <p style="font-size: 12px; font-weight: 400; font-style: normal;">per organization / month <br>billed annually</p> 
-                        <button> CREATE YOUR ACCOUNT</button>  
-                        <p style="display:flex; justify-content: flex-start; margin-left: 40px; margin-top: 5px;">50 orders / month <br><br> profit/loss report</p>                                                                                               
+                        <p style="font-family: 'Source Sans Pro', sans-serif; font-size: 16px; font-weight: 400; font-style: normal; line-height: 38px;">per organization / month
+                            <br>billed annually</p>
+                        <button> CREATE YOUR ACCOUNT</button>
+                        <p style="font-family: 'Source Sans Pro', sans-serif; font-size: 16px; font-weight: 400; font-style: normal; line-height: 20px; display:flex; justify-content: center; margin-top: 5px;">50
+                            orders / month <br><br> profit/loss report</p>
                     </div>
-                    <div class="card2">
-                        <h4>COMING SOON</h4>
+                    <div class="card2 carding">
+                        <h4 class="coming-soon">COMING SOON</h4>
                         <h2 style="padding-bottom: 5px;"> PREMIUM </h2>
-                        <div class="amount"> 
+                        <div class="amount">
                             <sup>#</sup>
                             <p style="color:#1A1A1A33;">2500</p>
                         </div>
-                        <p style="font-size: 12px; font-weight: 400; font-style: normal;">per organization / month <br>billed annually</p>
-                        <button style="background-color: #1A1A1A33;"> CREATE YOUR ACCOUNT</button>
-                        <p style="display:flex; justify-content: flex-start; margin-left: 40px; margin-top: 5px;">unlimited  orders / month <br><br>profit/loss report <br><br>profit analytics</p> 
-                            
+                        <p style="font-family: 'Source Sans Pro', sans-serif; font-size: 16px; font-weight: 400; font-style: normal; line-height: 38px;">per organization / month
+                            <br>billed annually</p>
+                        <button style="font-family: 'Source Sans Pro', sans-serif; background-color: #1A1A1A33;"> CREATE YOUR ACCOUNT</button>
+                        <p style= "font-family: 'Source Sans Pro', sans-serif; font-size: 16px; font-weight: 400; font-style: normal; line-height: 20px; display:flex; justify-content: center; margin-top: 5px;">
+                            unlimited orders / month <br><br>profit/loss report <br><br>profit analytics</p>
+
                     </div>
                 </div>
             </section>
-            
+
         </main>
         <footer>
-            <div class="footer1">
-                <img src="images/Footer_logo.png" alt="">
-                <h3>INVENTORY MANAGEMENT SYSTEM</h3>
-                <p>We understand how difficult and overwhelming <br> business can be for you traders in West Africa which is <br> why STOCKA is a solution to making your businesses <br> smooth and running with no regrets.</p>
-            
+            <div class="footer-logo">   
+                <img src="images/Footer_logo.png" alt="" class="logo">
             </div>
-            <div class="footer2">
-                <h3>SERVICES</h3>
-                <p>inventory management</p> <br>
-                <p>customer resource management</p> <br>
-                <p>reporting</p>
-            </div>
-            <div class="footer3">
-                <h3>RETAIL RESOURCES</h3>
-                <p>Partner programme</p> <br>
-                <p>Retail Digest</p> <br>
-                <p> Retail Tips</p> <br>
-                <p>Reviews</p>
-            </div>
-            <div class="footer4">
-                <h3>CONTACT US</h3>
-                <div class="footer_images">
-                    <img src="IMAGES/Gmail_icon.png" alt="">
-                    <img src="IMAGES/instagram.png" alt="">
-                    <img src="IMAGES/whatsapp.png" alt="">
-                    <img src="IMAGES/facebook.png" alt="">
-                    <img src="images/twitter.png" alt="">
-                    <img src="images/linkedin 2.png" alt="">
+            <div class="footer">
+                <div class="footer-heading">
                     
+                    <h3>INVENTORY MANAGEMENT SYSTEM</h3>
+                    <p>We understand how difficult and overwhelming <br> <br> business can be for you traders in West Africa
+                        which is <br> <br> why STOCKA is a solution to making your businesses <br> <br> smooth and running with no
+                        regrets.</p>
+
                 </div>
-                <a href="#">English</a>
+                <div class="footer-heading">
+                    <h3>SERVICES</h3>
+                    <p>Inventory management</p> 
+                    <p>Customer resource management</p>
+                    <p>Reporting</p>
+                </div>
+                <div class="footer-heading">
+                    <h3>RETAIL RESOURCES</h3>
+                    <p>Partner programme</p>
+                    <p>Retail Digest</p> 
+                    <p> Retail Tips</p>
+                    <p>Reviews</p>
+                </div>
+                <div class="footer-heading">
+                    <h3>CONTACT US</h3>
+                    <div class="footer_images">
+                        <a href=""><img src="IMAGES/Gmail_icon.png" alt=""></a>
+                        <!-- <a href=""><img src="IMAGES/instagram.png" alt=""></a> -->
+                        <a href=""><img src="IMAGES/whatsapp.png" alt=""></a>
+                        <!-- <a href=""><img src="IMAGES/facebook.png" alt=""></a> -->
+                        <a href=""><img src="images/twitter.png" alt=""></a>
+                        <a href=""><img src="images/linkedin 2.png" alt=""></a>
+
+                    </div>
+                    <!-- <a href="#" class="English">English</a> -->
+                </div>
             </div>
-            
+
+
         </footer>
         <p class="rights">Inventory Management system 2021 - All Rights Reserved </p>
+
     </div>
+    <script src="./stocka.js"></script>
 </body>
+
 </html>
