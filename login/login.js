@@ -29,7 +29,7 @@ loginForm.addEventListener("submit", async function (e) {
             localStorage.setItem("refresh_token", response.user.token.refresh);
 //             console.log(response.status);
 
-            if (response.user.status === 200) {
+            if (Response.ok) {
                 window.location.href="../user-dashboard/index.html"
 //                 location.assign("../user-dashboard/index.html");
             }
