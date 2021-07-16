@@ -33,6 +33,7 @@ loginForm.addEventListener("submit", async function (e) {
 //             console.log(response.status);
             if(response.user.status_code===403){
                 console.log('Login error: Wrong Credentials');
+                alert('Wrong Credentials...');
             }
 //             if (Response.ok) { // this doesnt work for now..
 //                 window.location.href="../user-dashboard/index.html"
