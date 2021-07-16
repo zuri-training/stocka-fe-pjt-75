@@ -42,6 +42,7 @@ loginForm.addEventListener("submit", async function (e) {
             else {
                console.log('login successful');
                localStorage.setItem("access_token", response.user.token.access);
+            //    console.log(response.user.token.access);
                localStorage.setItem("refresh_token", response.user.token.refresh);
                localStorage.setItem("email", response.user.email);
                window.location.href="../user-dashboard/index.html";

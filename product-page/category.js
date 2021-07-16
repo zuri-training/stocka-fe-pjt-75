@@ -6,7 +6,7 @@
 const form = document.querySelector("#form");
 const upload = document.querySelector("#upload");
 // const _name = document.querySelector("#product-name");
-const token = localStorage.getItem("token_access");
+const token = localStorage.getItem("access_token");
 // const token =
 //   "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjI2MzY1Njk0LCJqdGkiOiI2ZTQ1NTM3NGZiZjc0MjIxYjMxOWUwYmVjMDNmNGY4NiIsInVzZXJfaWQiOjEzfQ.WoA84AtftycAgZJYzKIrmtU5VgIycB2avkwnJHUjnmU";
 window.addEventListener("load", async () => {
