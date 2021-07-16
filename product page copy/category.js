@@ -4,8 +4,9 @@
 // const error = document.getElementById("error");
 // const result = document.getElementById("result");
 const form = document.querySelector("#form");
-const _name = document.querySelector("#product-name");
-const token = localStorage.getItem("token");
+
+ _name = document.querySelector("#product-name");
+const token = localStorage.getItem("access_token");
 // const token =
   "eyJ0eXAiOiJKV1QiLCJh;
 window.addEventListener("load", async () => {
