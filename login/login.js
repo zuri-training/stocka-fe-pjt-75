@@ -8,11 +8,12 @@ loginForm.addEventListener("submit", async function (e) {
 
     const email = document.querySelector("#email").value;
     const password = document.querySelector("#pwd").value;
+    const _access = '';
+    const _refresh = '';
 
     // const formData = new FormData(this);
 
-    try {
-        const response = await fetch (url, {
+      await fetch (url, {
             method: "POST",
             body: JSON.stringify ({
                 "email": email,
@@ -25,23 +26,28 @@ loginForm.addEventListener("submit", async function (e) {
         .then ((response) => response.json())
         .then ((response) => {
             console.log(response);
-            localStorage.setItem("access_token", response.user.token.access);
-            localStorage.setItem("refresh_token", response.user.token.refresh);
+            // Set tokens when login is successful... .Doesnt work here if there was a login error
+            // localStorage.setItem("access_token", response.user.token.access);
+            // localStorage.setItem("refresh_token", response.user.token.refresh);
+            // localStorage.setItem("email", response.user.email);
 //             console.log(response.status);
-
-            if (Response.ok) {
-                window.location.href="../user-dashboard/index.html"
-//                 location.assign("../user-dashboard/index.html");
+            if(response.user.status_code===403){
+                console.log('Login error: Wrong Credentials');
             }
+//             if (Response.ok) { // this doesnt work for now..
+//                 window.location.href="../user-dashboard/index.html"
+// //                 location.assign("../user-dashboard/index.html");
+//             }
             else {
-                alert(response.error);
+               console.log('login successful');
+               localStorage.setItem("access_token", response.user.token.access);
+               localStorage.setItem("refresh_token", response.user.token.refresh);
+               localStorage.setItem("email", response.user.email);
+               window.location.href="../user-dashboard/index.html";
             }
         
         })
 //         .then (data => {
 //             console.log(data);
 //         })
-    } catch (error) {
-        console.error(error);
-    }
 });
