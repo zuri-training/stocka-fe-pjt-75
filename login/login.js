@@ -38,9 +38,9 @@ loginForm.addEventListener("submit", async function (e) {
             }
         
         })
-        .then (data => {
-            console.log(data);
-        })
+//         .then (data => {
+//             console.log(data);
+//         })
     } catch (error) {
         console.error(error);
     }
