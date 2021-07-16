@@ -57,6 +57,7 @@ async function postProduct(url = "", post_data = {}) {
         // error.innerHTML = "Unauthorize: Token may have expired. Login";
       } else if (response.status_code === 400) {
         console.log("Bad request");
+        alert('Category Doesn\'t exist. Try Again -:( ')
         // error.innerHTML = "Conflicts: Category already exist. Try another";
       } else {
         // error.style.color = "green";
