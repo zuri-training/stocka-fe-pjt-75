@@ -21,8 +21,8 @@ loginForm.addEventListener("submit", async function (e) {
             headers: {
                 "Content-Type": "application/json"
             }
-        });
-        .then ((response) => response.json());
+        })
+        .then ((response) => response.json())
         .then ((response) => {
             console.log(response);
             localStorage.setItem("access_token", response.user.token.access);
@@ -38,9 +38,9 @@ loginForm.addEventListener("submit", async function (e) {
             }
         
         })
-//         .then (data => {
-//             console.log(data);
-//         })
+        .then (data => {
+            console.log(data);
+        })
     } catch (error) {
         console.error(error);
     }
