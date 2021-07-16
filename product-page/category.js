@@ -4,12 +4,16 @@
 // const error = document.getElementById("error");
 // const result = document.getElementById("result");
 const form = document.querySelector("#form");
+const upload = document.querySelector("#upload");
 // const _name = document.querySelector("#product-name");
 const token = localStorage.getItem("token_access");
 // const token =
 //   "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjI2MzY1Njk0LCJqdGkiOiI2ZTQ1NTM3NGZiZjc0MjIxYjMxOWUwYmVjMDNmNGY4NiIsInVzZXJfaWQiOjEzfQ.WoA84AtftycAgZJYzKIrmtU5VgIycB2avkwnJHUjnmU";
 window.addEventListener("load", async () => {
+  upload.style.cursor = 'pointer';
   console.log("loaded");
+  // const token = localStorage.getItem("token_access");
+  console.log(token);
 
   // username.innerHTML = localStorage.getItem("username");
   //   const loginButton = document.getElementById("login");
@@ -49,6 +53,7 @@ async function postProduct(url = "", post_data = {}) {
       if (response.status_code === 401) {
         console.log("Unauthorize");
         console.log("Unauthorized: Token may have expired. Login");
+        alert("Unauthorized: Token may have expired. Login");
         // error.innerHTML = "Unauthorize: Token may have expired. Login";
       } else if (response.status_code === 400) {
         console.log("Bad request");
@@ -56,6 +61,7 @@ async function postProduct(url = "", post_data = {}) {
       } else {
         // error.style.color = "green";
         // error.innerHTML = "success posting category. Try another :-)";
+        alert("success posting Product. Try another :-)");
       }
     })
     .catch((error) => console.log(error));
