@@ -8,7 +8,7 @@ const form = document.querySelector("#form");
  _name = document.querySelector("#product-name");
 const token = localStorage.getItem("access_token");
 // const token =
-  "eyJ0eXAiOiJKV1QiLCJh;
+  // "eyJ0eXAiOiJKV1QiLCJh;
 window.addEventListener("load", async () => {
   console.log("loaded");
 
