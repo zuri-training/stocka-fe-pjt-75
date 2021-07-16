@@ -5,11 +5,13 @@
 // const result = document.getElementById("result");
 const form = document.querySelector("#form");
 const upload = document.querySelector("#upload");
+const _email = document.querySelector("#_email");
 // const _name = document.querySelector("#product-name");
 const token = localStorage.getItem("access_token");
 // const token =
 //   "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjI2MzY1Njk0LCJqdGkiOiI2ZTQ1NTM3NGZiZjc0MjIxYjMxOWUwYmVjMDNmNGY4NiIsInVzZXJfaWQiOjEzfQ.WoA84AtftycAgZJYzKIrmtU5VgIycB2avkwnJHUjnmU";
 window.addEventListener("load", async () => {
+  _email.innerHTML = localStorage.getItem("email");
   upload.style.cursor = 'pointer';
   console.log("loaded");
   // const token = localStorage.getItem("token_access");
@@ -62,7 +64,7 @@ async function postProduct(url = "", post_data = {}) {
       } else {
         // error.style.color = "green";
         // error.innerHTML = "success posting category. Try another :-)";
-        alert("success posting Product. Try another :-)");
+        alert("success posting Product. Try another :-)\n", response);
       }
     })
     .catch((error) => console.log(error));
