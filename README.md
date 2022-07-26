@@ -33,8 +33,8 @@ https://stocka.netlify.app/
 #### THE AMAZING FRONT-END TEAM
 
 1. Crown Favour Ezeh - @peaches007
-2. Ndi Lionel - @Spyke Lionel
-3. Mary Maina - @MaryMaina
+2. Ndi Lionel - @spykelionel
+3. Mary Maina - @MaryaMaina
 4. Omolade Mercy Akingbade - @ladeé
 5. Ogunbanjo Oluwadamilare - @wildflower
 #
